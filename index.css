@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 
+:root{
+
+--pos: 30px;
+
+}
+
 html{
 
 scroll-behavior: smooth;
@@ -45,7 +51,7 @@ body{
 padding: 2em;
 
 width: auto;
-height: 1300px;
+height: 2200px;
 
 display: flex;
 align-items: center;
@@ -54,10 +60,25 @@ flex-direction: column;
 
 }
 
+#elmo{
+
+position: relative;  
+width: 90%;
+height: 80px;
+display: block;
+
+}
+
 #img-elmo{
 
-    height: 70px;
-    width: auto;
+  position: absolute;
+  left: 420px;
+  top: 0;
+
+  height: 70px;
+  width: auto;
+
+  transition: all 0.3s ease-out;
 
 }
 
@@ -181,9 +202,32 @@ box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
 
 }
 
+#cont-guep, #cont-games{
+
+  margin-top: 60px;
+  border-radius: 3px;
+  background-color: #3b3939;
+  width: 80%;
+  height: 700px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+
+}
+
 
 @media screen and (max-width: 800px) {
-  
+
+  #img-elmo{
+
+    left: 140px;
+
+  }
+
   #cont-image img{
 
     border-top-right-radius: 8px;

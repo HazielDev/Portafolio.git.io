@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    
+    <script src="index.js"></script>
+
     <title>Portafolio</title>
 
 </head>
@@ -22,13 +25,13 @@
             <div style="background-color: #f0f0f0; height: 2px; width: 50%;"></div>
 
             <div id="menu-botones">
-                <a id="boton-acerca de mi" href="#cont-acerca" class="boton-mini">
+                <a id="boton-acerca" onmouseenter="mover(235)" href="#cont-acerca" class="boton-mini">
                     Acerca de mi
                 </a>
-                <a id="boton-guep" class="boton-mini">
+                <a id="boton-guep" onmouseenter="mover(420)" class="boton-mini">
                     Sitios Web
                 </a>
-                <a id="boton-juegos" class="boton-mini">
+                <a id="boton-juegos" onmouseenter="mover(600)" class="boton-mini">
                     Video Juegos
                 </a> 
 
@@ -37,6 +40,7 @@
             <div id="elmo">
 
                 <img src="elmo.png" alt="" id="img-elmo">
+                <div id="cont-elmo"></div>
 
             </div>
             
@@ -45,7 +49,7 @@
         <div id="cont-acerca">
 
                 <div id="cont-image">
-                    <img src="haziel.jpg" alt="haziel">  
+                    <img src="haziel.jpg" alt="haziel" id="haziel">  
                 </div>
                 
                 <div id="cont-about-info">
@@ -57,6 +61,18 @@
                     <p style="padding: 5px;">Estoy disponible para trabajar en el turno matutino, de lunes a sabado, contacto: hazieldev@gmail.com</p>
 
                 </div>
+
+        </div>
+
+        <div id="cont-guep">
+
+
+
+        </div>
+
+        <div id="cont-games">
+
+
 
         </div>
 
