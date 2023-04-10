@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 
+html{
+
+scroll-behavior: smooth;
+
+}
+
 body{
 
     margin: 0;
     padding: 0;
-    background-color: rgb(37, 37, 37);
+    /* background-color: rgb(37, 37, 37); */
+    /* background: rgb(89,255,160);
+    background: linear-gradient(47deg, rgba(89,255,160,1) 40%, rgba(255,237,101,1) 98%); */
+    background: rgb(188,231,132);
+    background: linear-gradient(47deg, rgba(188,231,132,1) 40%, rgba(93,211,158,1) 98%);
     font-family:'Poppins', sans-serif;
     color: whitesmoke;
 
@@ -20,6 +30,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
     
 }
 
@@ -35,10 +47,12 @@ body{
 padding: 2em;
 
 width: auto;
-height: 800px;
+height: 1300px;
 
 display: flex;
-justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
 
 }
 
@@ -67,6 +81,13 @@ box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
 
 }
 
+#mini-menu h1{
+
+margin:0;
+font-weight: normal;
+
+}
+
 #menu-botones{
 
 height: 100px;
@@ -81,36 +102,84 @@ justify-content: center;
 
 .boton-mini{
 
-margin: 3em;
+margin: 3%;
 height: 60px;
-width: 90px;
+width: 120px;
+
+color: whitesmoke;
+text-decoration: none;
 display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
-background-color: #b8b8b8;
+background-color: #535353;
 box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
-border-radius: 3px;
-
+border-radius: 2px;
 
 }
 
-@media screen and (max-width: 480px) {
+.boton-mini:hover{
+
+background-color: rgb(79, 145, 13);
+cursor: pointer;
+border-top: 2px solid rgb(99, 173, 25);
+border-left: 2px solid rgb(99, 173, 25);
+border-top-left-radius: 2px;
+
+}
+
+#cont-acerca{
+
+  margin-top: 60px;
+  border-radius: 3px;
+  background-color: #3b3939;
+  width: 80%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#cont-acerca-info{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+
+
+@media screen and (max-width: 800px) {
     
-    body {
-      font-size: 14px;
-      background-color: aqua;
+    #mini-menu{
+
+      margin-top: 10px;
+
     }
 
-    #mini-menu{
-    
-        height: 200px;
+    #cont-acerca, #mini-menu{
 
+      width: 90%;
+
+    }
+
+    body {
+      font-size: 14px;
     }
 
     .boton-mini{
 
-        margin: 3px;
+        width: 99px;
+
+    }
+
+    #todo{
+
+      padding: 1em;
 
     }
 
