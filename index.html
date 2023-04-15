@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="index.js"></script>
 
-    <title>Portafolio</title>
+    <title>Haziel Dev | Portafolio</title>
 
 </head>
 <body>
@@ -28,10 +29,10 @@
                 <a id="boton-acerca" onmouseenter="mover(235)" href="#cont-acerca" class="boton-mini">
                     Acerca de mi
                 </a>
-                <a id="boton-guep" onmouseenter="mover(420)" class="boton-mini">
+                <a id="boton-guep" onmouseenter="mover(420)" href="#cont-guep" class="boton-mini">
                     Sitios Web
                 </a>
-                <a id="boton-juegos" onmouseenter="mover(600)" class="boton-mini">
+                <a id="boton-juegos" onmouseenter="mover(600)" href="#cont-games" class="boton-mini">
                     Video Juegos
                 </a> 
 
@@ -49,14 +50,14 @@
         <div id="cont-acerca">
 
                 <div id="cont-image">
-                    <img src="haziel.jpg" alt="haziel" id="haziel">  
+                    <img src="haziel_hd.jpg" alt="haziel" id="haziel">  
                 </div>
                 
                 <div id="cont-about-info">
 
                     <h2>Acerca de mi</h2>
                     <div style="background-color: #f0f0f0; height: 2px; width: 50%;"></div>
-                    <p style="padding: 5px;">Hola, soy Ivan Haziel Benito Rodriguez y estoy estudiando Ingeniería en Desarrollo de Software en la Universidad La Salle Bajío. Tengo 20 años y me apasiona la programación.</p>
+                    <p style="padding: 5px;">Hola, soy Ivan Haziel Benito Rodriguez y estoy estudiando Ingeniería en Desarrollo de Software en la Universidad La Salle Bajío. Tengo 20 años y me apasiona la programación y la creación de videojuegos.</p>
 
                     <p style="padding: 5px;">Estoy disponible para trabajar en el turno matutino, de lunes a sabado, contacto: hazieldev@gmail.com</p>
 
@@ -66,13 +67,58 @@
 
         <div id="cont-guep">
 
-            <h3>Mis Sitios Web</h3>
+            <div id ="guep-img">
+            <h2 style="margin:1%;">Ejemplos Sitios Web</h2>
+            <div style="background-color: #ffffff; height: 2px; width: 50%;"></div>
+            <p>De hecho esta pagina web en la que estas viendo esta información la hice yo mismo, ya sea para un familiar o por gusto, y aqui hay unos ejemplos de las paginas web que he hecho c:</p>
+            <div id="guep-botones">
+
+                <a class="boton-mini" href="Prueba1/index.html">
+                    SAKAL
+                </a>
+
+                <a class="boton-mini" href="Pagina web/index.html">
+                    Persona Común
+                </a>
+
+                <a class="boton-mini" href="info/index.html">
+                    Linktree
+                </a> 
+
+            </div>
+            </div>
+            <!-- <h2>Ejemplos:</h2> -->
+           
 
         </div>
 
         <div id="cont-games">
 
+            <div id="title-games">
+            <h2 style="margin:1%;">Videojuegos</h2>
+            <div style="background-color: #ffffff; height: 2px; width: 50%; margin:1%;"></div>
+            </div>
 
+            <section>
+                <img src="cake_quest.png" alt="">
+                <img src="Boss.PNG" alt="">
+                <img src="Far.PNG" alt="">
+                <img src="Creeper_Cave.PNG" alt="">
+                
+            </section>
+
+            <div id="games-botones">
+
+                <a class="boton-mini" id="btn-itch" href="https://haziel-dev.itch.io/">
+                    Itch-io
+                    <i class="fa-brands fa-itch-io fa-2xl"></i>
+                </a>
+                <a class="boton-mini" id="btn-play" href="https://play.google.com/store/apps/details?id=hazieldev.firagames.cakequest">
+                    Google Play
+                    <i class="fa-brands fa-google-play fa-2xl"></i>
+                </a>
+
+            </div>
 
         </div>
 
