@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKAL | Analisis integral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo_servicios.css">
+    <script src="aboutus.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src = "sakal_arbol_cut.png" width="50px" height="50px" style="border-radius: 50%;">
+          <a class="navbar-brand" href="index.html">SAKAL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Incio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aboutus.html"><i class="fa-solid fa-circle-info"></i>Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="servicios.html"><i class="fa-solid fa-bell-concierge"></i>Servicios</a>
+              </li>
+            </ul>
+      
+          </div>
+        </div>
+      </nav>
+    
+
+      <div class="parallax">
+        <img src="maquinaria_3.jpg">
+        <div class="parallax-overlay">
+        
+          <h1>Servicios</h1>
+          <div style="background-color: #f0f0f0; height: 3px; width: 50%;"></div>
+
+        </div>
+      </div>
+
+      <div id="todo">
+
+        <div id="info"> 
+
+            <div id="cont_image">
+                <img src="vacas.jpg" alt="vacas" id="img-vacas">
+            </div>
+
+            <div id="cont_info">
+                <h4>Nuestros servicios</h4>
+                <p>En SAKAL contamos con un sistema de abastecimiento y distribucion de nuestros productos que es un resultado de una efectiva logistica en: </p>
+                <div id="lista">
+                <ul>
+                    <li>Instalaciones</li>
+                    <li>Equipo tecnico</li>
+                    <li>Capacidad de produccion</li>
+                  </ul>
+                  <ul>
+                    <li>Manipulación</li>
+                    <li>Almacenamiento</li>
+                    <li>Transporte</li>
+                </ul>
+                
+            </div>
+                <p>Esto nos permite asegurar planes de abastecimiento recurrente en nuestra area de influencia. SAKAL cuenta con una estrategia para cubrir las neesidades del mercado agranel y presentaciones diversas para distribuidores y almacenamiento de las materias primas.</p>
+            </div>
+            
+        </div>
+
+        <div id="cont_botones">
+
+        <a id="boton-Res" onclick="mostrarres()" class="boton-alimento" href="#res">
+            
+            <i class="fa-solid fa-cow fa-2xl" style="font-size: 4rem;"></i>
+            <h3>Res</h3>
+
+        </a>
+
+        <a id="boton-Cerdo" onclick="mostrarcerdo()" class="boton-alimento" href="#cerdo"> 
+
+            <i class="fa-solid fa-piggy-bank fa-2xl" style="font-size: 4rem;"></i>
+            <h3>Cerdo</h3>
+
+        </a>
+
+        <a id="boton-Equino" onclick="mostrarequino()" class="boton-alimento" href="#equino" >
+            
+            <i class="fa-solid fa-horse-head fa-2xl" style="font-size: 4rem;"></i>
+            <h3>Equino</h3>
+
+        </a>
+
+        </div>
+
+        <div id="res" class="cont-comida">
+
+            <h2>Alimento para vacas SAKAL</h2>
+            <div style="background-color: rgb(28, 177, 72); height: 2px; width: 100%;"></div>
+            <br>
+            <p>El alimento para vacas es crucial para asegurar la salud y el bienestar de los animales, así como para garantizar una producción de leche y carne de alta calidad. En nuestra empresa, ofrecemos alimento para vacas de alta calidad que se adapta a las necesidades nutricionales de los diferentes tipos de ganado bovino. Nuestro alimento para vacas está formulado con una mezcla equilibrada de proteínas, carbohidratos, grasas, vitaminas y minerales, y es diseñado para proporcionar a los animales los nutrientes necesarios para mantener una buena salud, producir leche y carne de calidad, y aumentar su rendimiento reproductivo. Utilizamos ingredientes de alta calidad, como cereales, forrajes, harinas de soja y otros suplementos alimenticios, que son seleccionados cuidadosamente y procesados de manera segura para garantizar que estén libres de contaminantes y toxinas. Además, nuestra empresa cuenta con nutricionistas y veterinarios especializados en ganado bovino que colaboran en el desarrollo de nuestras dietas para vacas y en la implementación de rigurosos controles de calidad en todas las etapas del proceso de producción, desde la selección de ingredientes hasta la formulación, fabricación y distribución del alimento.</p>
+
+        </div>
+
+        
+        <div id="cerdo" class="cont-comida">
+
+            <h2>Alimento para cerdos SAKAL</h2>
+            <div style="background-color: rgb(28, 177, 72); height: 2px; width: 100%;"></div>
+            <br>
+            <p>El alimento para cerdos es una parte crucial en la producción de cerdos sanos y de alta calidad. El alimento que ofrecemos en nuestra empresa está diseñado para proporcionar una nutrición equilibrada y completa que cumple con las necesidades específicas de los cerdos. Nuestro alimento para cerdos es de alta calidad debido a que utilizamos ingredientes de origen vegetal y animal de alta calidad que son seleccionados cuidadosamente y procesados de manera segura para garantizar que estén libres de contaminantes y toxinas. Además, nuestro alimento para cerdos es formulado por expertos en nutrición animal y veterinarios especializados en cerdos, quienes aseguran que la dieta proporciona los nutrientes esenciales que los cerdos necesitan para crecer saludablemente y producir carne de calidad. También nos aseguramos de que nuestro alimento para cerdos cumpla con las normas y regulaciones alimentarias y de seguridad, para garantizar la inocuidad del producto. En resumen, nuestro alimento para cerdos es de alta calidad porque está formulado con ingredientes de calidad, es producido siguiendo altos estándares de seguridad alimentaria y es diseñado para satisfacer las necesidades específicas de los cerdos.</p>
+
+        </div>
+
+        <div id="equino" class="cont-comida">
+
+            <h2>Alimento para equinos SAKAL</h2>
+            <div style="background-color: rgb(28, 177, 72); height: 2px; width: 100%;"></div>
+            <br>
+            <p>La empresa SAKAL se ha dedicado a producir y ofrecer alimento para equinos de alta calidad durante muchos años. La calidad de su alimento se debe a varios factores, como la selección cuidadosa de los ingredientes, la formulación de una dieta equilibrada y adaptada a las necesidades de los equinos, y la implementación de rigurosos procesos de control de calidad en todas las etapas del proceso de producción. Además, la empresa se preocupa por mantener altos estándares de higiene y seguridad alimentaria en sus instalaciones. SAKAL también trabaja con nutricionistas y veterinarios especializados en equinos para asegurar que su alimento cumpla con los requisitos nutricionales y de salud de los animales. Todos estos esfuerzos se traducen en un alimento para equinos de alta calidad que ayuda a mantener la salud, el bienestar y el rendimiento de los animales.</p>
+
+        </div>
+
+      </div>
+
+   
+
+    <footer>
+      <div class="footer-logo">
+        <img src="sakal_arbol_cut.png" alt="Logo de mi empresa" width="60px" height="60px" style="border-radius: 50%;">
+      </div>
+      <div class="footer-text">
+        <p>Derechos de autor © 2023 SAKAL-MX. Todos los derechos reservados.</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+      </div>
+    </footer>
+
+</body>
+
+</html>
