@@ -17,12 +17,24 @@ i {
 }
 
 
+#cont-trigo{
+
+    display: flex;
+    width: 100%;
+    height: 452px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+
+
+}
+
 .img-trigo{
 
 border-radius: 8px;
 
-position: relative;
-left: 30px;
+width: 90%;
 
 height: 450px;
 
@@ -49,8 +61,12 @@ box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .cont_texto {
+
+    display: flex;
     text-align: center;
-    padding: 20px 0 0 50px;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .cont_parrafo{
@@ -58,6 +74,7 @@ box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
     width:100%;
 
     height: 550px;
@@ -147,3 +164,56 @@ footer p {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+@media screen and (max-width: 800px) {
+
+    body{
+        
+        font-size: 12px;
+        align-items: center;
+
+    }
+
+    .cont_parrafo{
+
+        margin:0;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        height: 800px;
+
+    }
+
+    #cont-pasion{
+
+        flex-direction: column-reverse;
+
+    }
+
+    .Cajita{
+
+        padding: 0;
+        margin: 0;
+        width: 90%;
+
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 13px; 
+    background-color: #444444;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c; 
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8f8f8f; 
+  }
