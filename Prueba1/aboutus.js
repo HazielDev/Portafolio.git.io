@@ -49,7 +49,7 @@ function mostrarres(){
     document.getElementById("todo").style.height = "2000px";
     document.getElementById("info").style.height = "750px";
     document.getElementById("cont_botones").style.height = "200px";
-    y.style.height = "800px";
+    y.style.height = "870px";
 
   }else{
 
