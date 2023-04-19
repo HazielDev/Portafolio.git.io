@@ -238,6 +238,7 @@ width: 500px;
 }
 
 footer {
+    
     background-color: #f5f5f5;
     color: black;
      padding: 20px;
@@ -277,6 +278,12 @@ footer {
 
     @media screen and (max-width: 800px) {
 
+        #res, #cerdo, #equino{
+
+            height: 70%;
+
+        }
+
         #menu-nav a{
 
             padding-left: 1%;
@@ -284,10 +291,28 @@ footer {
     
         }
 
+        #cont_info{
+
+            width: 100%;
+
+        }
+
+        #cont_image{
+
+            width: 100%;
+            height: auto;
+
+        }
+
         #info{
 
             flex-direction: column;
-            height: 70%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            height: 75%;
+            width: 100%;
 
         }
 
@@ -299,9 +324,23 @@ footer {
 
         .boton-alimento{
 
-            margin:0;
-            width: 40%;
+            font-size: medium;
+            margin: 1%;
+            width: 130px;
+            height: 130px;
+        
+        }
 
+        #icono{
+
+            font-size: 4px;
+
+        }
+
+        #cont_botones{
+
+            margin-top: 0;
+            width: 100%;
 
         }
 
