@@ -20,8 +20,18 @@ y.style.display = "none";
 z.style.display = "none";
 
 
+if (window.innerWidth < 800) {
+
+  document.getElementById("todo").style.height = "2000px";
+  document.getElementById("info").style.height = "750px";
+  document.getElementById("cont_botones").style.height = "200px";
+  x.style.height = "800px";
+
+}else{
+
 document.getElementById("todo").style.height = "1300px";
 
+}
 }
 
 function mostrarres(){
@@ -34,8 +44,18 @@ function mostrarres(){
   y.style.display = "block";
   z.style.display = "none";
   
-  
+  if (window.innerWidth < 800) {
+
+    document.getElementById("todo").style.height = "2000px";
+    document.getElementById("info").style.height = "750px";
+    document.getElementById("cont_botones").style.height = "200px";
+    y.style.height = "800px";
+
+  }else{
+
   document.getElementById("todo").style.height = "1300px";
+  
+  }
   
   }
 
@@ -44,12 +64,22 @@ function mostrarres(){
     var x = document.getElementById("equino");
     var y = document.getElementById("res")
     var z = document.getElementById("cerdo")
-    
+
     x.style.display = "none";
     y.style.display = "none";
     z.style.display = "block";
     
-    
+    if (window.innerWidth < 800) {
+
+      document.getElementById("todo").style.height = "2000px";
+      document.getElementById("info").style.height = "750px";
+      document.getElementById("cont_botones").style.height = "200px";
+      document.getElementById("cerdo").style.height = "800px";
+
+    }else{
+
     document.getElementById("todo").style.height = "1300px";
     
+    }
+
     }

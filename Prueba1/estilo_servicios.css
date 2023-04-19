@@ -8,7 +8,6 @@ i {
 
 }
 
-
 #menu-nav{
 
     display: flex;
@@ -238,12 +237,13 @@ width: 500px;
 }
 
 footer {
-    
+
     background-color: #f5f5f5;
     color: black;
      padding: 20px;
      text-align: center;
     font-size: 14px;
+    
     }
     
     footer a {
@@ -278,11 +278,28 @@ footer {
 
     @media screen and (max-width: 800px) {
 
-        #res, #cerdo, #equino{
+        #todo{
+
+            margin-top: 25px;
+            padding: 0%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        #logo{
+
+            display: none;
+            
+        }
+
+        /* #res, #cerdo, #equino{
 
             height: 70%;
 
-        }
+        } */
 
         #menu-nav a{
 
@@ -309,10 +326,10 @@ footer {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            justify-content: center;
+            justify-content: flex-start;
 
             height: 75%;
-            width: 100%;
+            width: 90%;
 
         }
 
