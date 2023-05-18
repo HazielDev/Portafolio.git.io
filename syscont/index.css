@@ -538,6 +538,12 @@ font-weight: bold;
 
   @media (max-width:768px) {
 
+    #circulo_azul h2{
+
+      font-size: 1.2em;
+      
+      }
+
     #boton-ver{
 
       top: 350px;
