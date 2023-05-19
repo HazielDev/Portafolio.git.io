@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* 
+https://coolors.co/ffffff-000000-ffa400-715b64-4ea2c9 */
+
+@font-face {
+    font-family: 'Aliens';
+    src: url('aliens-cows.bold.ttf') format('truetype');
+}
+
+:root{
+
+--azulito: #166cb3;
+--negrito: rgb(31, 30, 30);
+
+}
+
+body{
+
+padding: 0;
+margin: 0;
+height: 1800px;
+font-family: 'Poppins', sans-serif;
+color: aliceblue;
+
+}
+
+#todo{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+#logo-mini{
+
+height: 65px;
+width: auto;
+
+}
+
+#menu-nav{
+
+height: 200px;
+width: 100%;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom: 20px;
+border-style: solid;
+border-color: #166cb3;
+display: flex;
+align-items: center;
+justify-content:  center;
+flex-direction: column;
+/* gap: 20px; */
+
+
+}
+
+#menu-nav a{
+
+    font-family: 'Aliens', sans-serif;
+    font-size: 190%;
+    text-decoration: none;
+    color: #166cb3;
+
+}
+
+#titulo{
+
+display: flex;
+align-items: center;
+justify-content:  center;
+gap: 20px;
+
+}
+
+#telefono{
+
+display: flex;
+align-items: center;
+justify-content:  center;
+font-family: 'Poppins', sans-serif;
+color: var(--azulito);
+
+margin: 0;
+padding: 0;
+
+}
+
+#telefono p{
+
+margin:0;
+padding: 0;
+
+}
+
+
+#banner-img{
+
+position: relative;
+height: 490px;
+width: 100%; 
+
+background-image: url(images/Syscont\ Sistemas.jpg);
+background-position: 50% -320px;
+background-size: cover;
+object-fit: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+
+}
+
+#camaras{
+
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  height: 350px;
+  width: 350px;
+  background-image: url(images/Syscont\ Camaras\ de\ seguridad.png);
+  background-size: 350px;
+  background-repeat: no-repeat;
+
+}
+
+#laser{
+
+position: absolute;  
+height: 8px;
+width: 8px;
+background-image: url(images/laser\ 2.png);
+background-size: 8px;
+bottom: 85px;
+left: 93px;
+
+
+}
+
+#circulo_blanco{
+
+  position:absolute;
+
+  height: 850px;
+  width: 850px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+
+  bottom: -250px;
+  left: -350px;
+
+  
+}
+
+#circulo_azul{
+
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  background-color: var(--azulito);
+  border-radius: 50%;
+  left: 20px;
+  bottom: 30px;
+
+  color: white;
+
+}
+
+#circulo_azul h2{
+
+position: absolute;
+bottom: 450px;
+left:340px;
+font-size: 1.5em;
+
+}
+
+#mini-menu{
+
+    position: relative;
+    z-index: 9;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    /* font-weight: bold; */
+
+     background-color: rgba(0,0,0,0.5); 
+
+}
+
+#mini-menu a{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+
+    width: 220px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+#mini-menu a:hover{
+
+background-color: rgba(0,70,150,0.6);
+
+}
+
+#boton-ver{
+
+/* background-color: aliceblue; */
+border-color: aliceblue;
+border-style: solid;
+height: 100px;
+width: 200px;
+border-radius: 30px;
+
+position: absolute;
+top: 300px;
+left: 50px;
+
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+color: aliceblue;
+text-decoration: none;
+font-size: 1.4em;
+transition: background-color 0.5s ease;
+
+}
+
+#boton-ver:hover{
+
+color: #166cb3;
+background-color: aliceblue;
+
+}
+
+#whats{
+
+position: fixed;
+
+height: 80px;
+width: 80px;
+
+bottom :30px;
+right: 20px;
+
+background-image: url(images/whatsapp\ logo.png);
+background-size: 80px;
+
+cursor: pointer;
+
+z-index: 90;
+
+}
+
+#cont{
+
+height: 500px;
+width: 45%;
+background-image: url(camera.jpg);
+background-size: 600px;
+background-position: 90px -140px;
+object-fit: cover;
+background-repeat: no-repeat;
+
+}
+
+#cont-info{
+
+margin-top: 50px;
+display: flex;
+height: 500px;
+width: 100%;
+background-color: var(--negrito);
+
+}
+
+#cont-text{
+
+font-family: 'Poppins', sans-serif;
+width: 55%;
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 1em;
+flex-direction: column;
+align-items: center;
+padding: 2%;
+color: aliceblue;
+
+}
+
+#cont-productos{
+
+display: flex;
+width: 100%;
+text-align: center;
+align-items: center;
+margin-top: 50px;
+color: black;
+font-family: 'Poppins', sans-serif;
+flex-direction: column;
+
+}
+
+#carrusel{
+
+margin-top: 50px;
+display: flex;
+height: 500px;
+flex-direction: row;
+gap: 2%;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.product-item{
+
+height: 100%;
+width: 100%;
+/* background-color: #616161; */
+border: 1px solid rgb(202, 202, 202);
+border-radius: 10px;
+background-color: #000000;
+
+}
+
+.product-item:hover .product-text{
+
+cursor: pointer;
+background-color: #5c5c5c;
+
+}
+
+.product-img{
+
+background-image: url(Camara\ que\ puedas\ ver\ desde\ el\ celular\ con\ internet.jpg);
+background-size: 300px;
+border-radius: 10px;
+
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+
+width: 100%;
+height: 50%;
+
+background-repeat: no-repeat;
+
+}
+
+.product-text{
+
+height: 50%;
+display: flex;
+font-size: 0.9em;
+font-family: 'Poppins', sans-serif;
+color: aliceblue;
+background-color: var(--negrito);
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+
+border: 0px;
+border-color: var(--azulito);
+border-style: solid;
+border-top: 0;
+
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+
+
+}
+
+.carousel{
+
+  width:100%;
+  margin: 0px 0px;
+
+}
+
+#acerca{
+
+display: flex;
+margin-top: 50px;
+height: 500px;
+width: 100%;
+background-color: var(--negrito);
+font-family: 'Poppins', sans-serif;
+color: aliceblue;
+
+/* min-height:50%;
+background:linear-gradient(150deg, #166cb3 50%, #000000 50%) */
+
+background-image: url(images/Tecnologias\ Syscont.jpg);
+background-repeat: no-repeat;
+background-size: 50%;
+
+}
+
+
+#acerca-texto{
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 2%;
+
+}
+
+#acerca-formulario{
+
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 50%;
+  height: 100%;
+
+}
+
+
+section{
+
+display: flex;
+width: 100%;
+height: 530px;
+
+
+}
+
+.section-div{
+
+display: flex;
+
+width: 0;
+flex-grow: 1;
+object-fit: cover;
+opacity: 0.8;
+transition: .5s ease;
+filter: contrast(95%);
+
+background-position: center;
+background-size: 150%;
+background-repeat: no-repeat;
+
+align-items: center;
+justify-content: center;
+
+font-size: 0em;
+
+}
+
+.section-div:hover{
+
+width: 300px;
+opacity: 1;
+filter: contrast(100%);
+background-size: 100%;
+
+color: azure;
+
+font-size: 1.8em;
+
+}
+
+footer{
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+margin-top: 60px;
+height: 110px;
+width: 100%;  
+
+border-top: 1px solid rgb(206, 206, 206);
+
+font-weight: bold;
+
+}
+
+::-webkit-scrollbar {
+    width: 13px; 
+    background-color: #444444;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c; 
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8f8f8f; 
+  }
+
+
+
+  @media (max-width:1352px) {
+    
+    #banner-img{
+
+      width: 100%;
+      background-size: 100%;
+      background-position: center;
+
+    }
+
+    #boton-ver{
+
+      top: 350px;
+      width: 15%;
+      height: 15%;
+      font-size: 100%;
+
+    }
+
+  }
+
+
+  @media (max-width:768px) {
+
+    #circulo_azul h2{
+
+      font-size: 1.2em;
+      
+      }
+
+    #boton-ver{
+
+      top: 350px;
+      width: 300px;
+      height: 100px;
+      font-size: 1.2em;
+
+    }
+
+    #acerca{
+
+      flex-direction: column;
+      height: 900px;
+      background-image: none;
+
+    }
+
+    #acerca-texto{
+
+      width: 100%;
+      height: 50%;
+      font-size: 0.8em;
+      align-items: center;
+     justify-content: center;
+     background-color: var(--negrito);
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+     url(images/fondo-programacion.jpg);
+     background-repeat: no-repeat ;
+
+    }
+
+    #acerca-formulario{
+
+      width: 100%;
+      height: 50%;      
+
+    }
+
+    .product-text{
+
+      /* background-color: #db2d16; */
+      
+      }
+
+      #banner-img{
+
+        background-size: 160%;
+      }
+
+      .carousel{
+
+        margin: 0px 60px;
+
+      }
+
+      #cont-info{
+
+        height: 750px;
+        flex-direction: column;
+
+      }
+
+      #cont-text{
+
+        height: 60%;
+        width: 100%;
+        font-size: 0.8em;
+        justify-content: center;
+
+      }
+
+      #cont{
+
+        height: 40%;
+        width:100%;
+        background-position: center;
+        align-items: center;
+
+      }
+
+      #mini-menu{
+
+        justify-content: center;
+
+      }
+
+      #mini-menu a{
+
+        font-size: 0.8em;
+        width: 33%;
+
+      }
+
+      footer{
+
+        font-size: 0.8em;
+
+      }
+      
+      #telefono{
+
+        font-size: 0.8em;
+
+      }
+
+      #titulo a{
+
+        font-size: 1.1em;
+
+      }
+
+      section{
+
+        width: 100%;
+
+      }
+
+      .section-div h2{
+
+        font-size: 1em;
+
+      }
+
+      .section-div{
+
+        background-size: cover;
+        object-fit: cover;
+
+      }
+
+      .section-div:hover{
+        
+        background-size: cover;
+        object-fit: cover;
+      
+      }
+
+  }
