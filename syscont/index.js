@@ -11,8 +11,20 @@
 // console.log(boton_ver.style.left);
 
 let turn = false;
-let pos = 2;
 let derecha = false;
+
+
+function correo_info(){
+
+window.location.href = 'mailto:syscontrolmx.com?subject=Hola estoy interesado en un producto Syscontrol&body=Mi nombre es:';   
+
+}
+
+function Correu(){
+
+window.location.href = 'mailto:hazieldev@gmail.com?subject=Hola estoy interesado en una pagina web&body=Mi nombre es:';
+
+}
 
 setInterval(function() {
     // Código que deseas ejecutar cada segundo
@@ -30,21 +42,61 @@ setInterval(function() {
 
     }
 
-    if (derecha == true){
+    // if (derecha == true){
 
-        pos++;
-        if (pos >= 7){derecha = false;}
+    //     pos++;
+    //     if (pos >= 7){derecha = false;}
 
-    }else{
+    // }else{
 
-        pos--;
-        if (pos <= 1){derecha = true;}
+    //     pos--;
+    //     if (pos <= 1){derecha = true;}
 
-    }
+    // }
     
-    document.documentElement.style.setProperty("--position", pos);
-
-    console.log(pos);
+    // document.documentElement.style.setProperty("--position", pos);
 
   }, 1000);
   
+
+  function mover(pos){
+
+     document.documentElement.style.setProperty("--position", pos);
+
+  }
+
+  let pos = document.documentElement.style.getPropertyValue("--position");
+
+  document.documentElement.style.setProperty("--position", 1);
+
+
+  function mover_isq(){
+    
+    let pos = document.documentElement.style.getPropertyValue("--position");
+            
+    // let estiloRoot = window.getComputedStyle(document.documentElement);
+    // let pos = estiloRoot.getPropertyValue("--position");
+
+    if(pos >= 2){
+
+    document.documentElement.style.setProperty("--position", (pos = pos -1));
+    
+    }
+
+  }
+
+  function mover_der(){
+
+    let pos = document.documentElement.style.getPropertyValue("--position");
+
+    let num = parseInt(pos);
+    
+    if (num <= 6){
+
+    num = num + 1;
+
+    document.documentElement.style.setProperty("--position", num);
+    
+    }
+
+  }

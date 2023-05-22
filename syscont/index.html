@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Pages/carrusel.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="Syscont logo.jpg" type="image/x-icon">
 
 
@@ -22,7 +23,7 @@
         <a href="">SISTEMAS Y CONTROLES DE SEGURIDAD</a>
         </div>
         <div id="telefono">
-            Numero de contacto: 477-217-87-28
+            <p>Londres 308, Col. Andrade, León, Guanajuato c.p.  37020 Tel 477 2178728 info@syscontrolmx.com</p>
         </div>
 
     </div>
@@ -53,10 +54,9 @@
             <div id="cont"></div>
             <div id="cont-text">
 
-                <h3>Calidad Syscontrol</h3>
+                <h3>Seguridad y Experiencia</h3>
                 <div style="width: 50%; height: 2px; background-color: aliceblue;"></div>
-                <p style="margin-top: 10px;">Nuestras cámaras de seguridad son de alta calidad y cuentan con características como la detección de movimiento y la grabación en alta definición. Además, sus sistemas de alarmas de casa están diseñados para proporcionar una protección completa contra intrusiones, incendios y otros peligros para el hogar.</p>
-                <p>Si está buscando proteger su hogar y su familia, Syscont es una excelente opción para cámaras de seguridad y sistemas de alarmas para hogares confiables y de alta calidad. No dude en ponerse en contacto con ellos para obtener más información sobre sus productos y servicios.</p>
+                <p style="margin-top: 10px; padding: 2%;">Contamos con más de 20 años en el ramo de la tecnología, especializados en la distribución, instalación, mantenimiento de sistemas de seguridad, Computo y Redes  con productos de la más alta calidad, enfocándonos principalmente en soluciones tecnológicas adecuadas a tus necesidades.</p>
 
             </div>
 
@@ -64,12 +64,12 @@
 
         <div id="cont-productos">
 
-            <h4>PRODUCTOS</h4>
-            <div style="height: 2px; width: 60%; background-color: black;"></div>
+            <h3>Productos</h3>
+            <div style="width: 70%; height: 1px; background-color: darkgrey;"></div>
        
         <div id="carousel">
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-1" onclick="mover(1)">
                     <div class="product-img" style="background-image: url(images/Syscont\ Alarmas.jpg); background-size: 500px;"></div>
                     <div class="product-text">
                         <h5>ALARMAS</h5>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-2" onclick="mover(2)">
                     <div class="product-img"></div>
                     <div class="product-text">
                         <h5>CCTV</h5>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-3" onclick="mover(3)">
                     <div class="product-img" style="background-image: url(images/Interfon.jpg);"></div>
                     <div class="product-text">
                         <h5>VIDEO PORTERO / INTERFON</h5>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-4" onclick="mover(4)">
                     <div class="product-img" style="background-image: url(images/Asistencia.jpg);"></div>
                     <div class="product-text">
                         <h5>CONTROL DE ASISTENCIA</h5>
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-5" onclick="mover(5)">
                     <div class="product-img" style="background-image: url(images/Control\ de\ Acceso.jpg);"></div>
                     <div class="product-text">
                         <h5>CONTROL DE ACCESO</h5>
@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-6" onclick="mover(6)">
                     <div class="product-img" style="background-image: url(images/Computo\ 2.jpg); background-size: 600px; background-position: center;"></div>
                     <div class="product-text">
                         <h5>COMPUTO</h5>
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product-item">
+                <div class="product-item" id="item-7" onclick="mover(7)">
                     <div class="product-img" style="background-image: url(images/Redes.jpg);"></div>
                     <div class="product-text">
                         <h5>REDES</h5>
@@ -132,7 +132,13 @@
                     </div>
                 </div>
             </div>
-          </div>
+
+            <div id="boton-left" class="boton-carrusel" onclick="mover_isq()"><</div>
+            <div id="boton-right" class="boton-carrusel" onclick="mover_der()">></div>
+
+        </div>
+
+        
 
           <div id="acerca">
 
@@ -140,43 +146,75 @@
             <div id="acerca-texto">
                 <h3 style="margin-top: 40px;">Acerca de nosotros</h3>
                 <p>Si estás buscando Proteger tu Hogar o negocio, Syscontrol es una excelente opción para video vigilancia y de Alarmas Residenciales o de Negocios, confiables y de alta calidad. No dude en ponerse en contacto con nosotros para obtener más información sobre sus productos y servicios.</p>
-                <p>Syscontrol se enorgullece de ofrecer productos y servicios de seguridad de alta calidad a precios asequibles. Trabajamos con nuestros clientes para asegurarnos de que obtengan la solución adecuada de seguridad adecuada a sus necesidades y  a su vez servicios de instalación y mantenimiento para garantizar que los sistemas funcionen correctamente.
-                </p>
+                <p>Syscontrol se enorgullece de ofrecer productos y servicios de seguridad de alta calidad a precios asequibles. Trabajamos con nuestros clientes para asegurarnos de que obtengan la solución adecuada de seguridad adecuada a sus necesidades y a su vez servicios de instalación y mantenimiento para garantizar que los sistemas funcionen correctamente.</p>
             </div>
+
             <div id="acerca-formulario">
-                <h3 style="margin-top: 40px;">Mandanos un correo</h3>
+                
+                <p id="marcanos">Márcanos <i class="fa-brands fa-whatsapp" style="color: #166cb3;"></i> +52 477 2178728</p>
+
+                <div id="o">
+                    <div style="height: 1px; width: 30%; background-color: aliceblue;"></div>
+                    <p>ó</p>
+                    <div style="height: 1px; width: 30%; background-color: aliceblue;"></div>
+                </div>
+
+                <h3 style="margin-top: 40px;">Mándanos un correo</h3>
 
                 <form action="form.php" method="POST">
 
-                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre" style="width: 70%; margin-top: 5px;"><br>
+                    <input type="text" id="nombre" class="input-form" name="nombre" required placeholder="Nombre" style="width: 70%; margin-top: 5px; height: 25%;"><br>
                   
-                    <input type="email" id="correo" name="correo" required placeholder="Correo" style="width: 70%; margin-top: 10px;"><br>
+                    <input type="email" id="correo" class="input-form" name="correo" required placeholder="Correo" style="width: 70%; margin-top: 10px; height: 25%;"><br>
                   
-                    <textarea id="mensaje" name="mensaje" required placeholder="Mensaje" style="width: 70%; margin-top: 10px; height: 80%;"></textarea><br>
+                    <textarea id="mensaje" class="input-form" name="mensaje" required placeholder="Mensaje" style="width: 70%; margin-top: 10px; height: 80%;"></textarea><br>
                   
-                    <input type="submit" value="Enviar" style="width:70%; height: 25%;">
+                    <input type="submit" id="button-enviar" value="Enviar" style="width:70%; height: 25%; border-radius: 13px;">
                   </form>                  
             </div>
 
           </div>
 
           <h3 style="margin-top: 50px;">Servicios</h3>
+          <div style="width: 70%; height: 1px; background-color: darkgrey;"></div>
 
           <section id="servicios">
-            <div class="section-div" style="background-image: url(images/Computa\ syscont.jpg);">
+            <div class="section-div" id="section-servicios" style="background-image: url(images/syscont\ commputo.jpg);">
             <h2>Computo</h2>
+            <p>Venta, Reparación, Actualización y Mantenimiento de equipo de Cómputo.</p>
             </div>
-            <div class="section-div" style="background-image: url(images/Software.jpg);">
+            <div class="section-div" id="section-software" style="background-image: url(images/Software.jpg);">
             <h2>Software</h2>
+            <p>Somos distribuidores ASPEL.</p>
             </div>
-            <div class="section-div" style="background-image: url(images/Reparacioin\ Syscont.jpg);">
-            <h2>Reparacion</h2>
+            <div class="section-div" id="section-redes" style="background-image: url(images/Syscont\ Sistemas\ de\ Redes.jpg)">
+            <h2>Redes</h2>
+            <p>Instalación de Redes Ethernet, Enlaces Inalámbricos.</p>
             </div>
         </section>
 
         <footer>
-            <p>Derechos de autor @2023 SYSCONTROL | Hecho por HazielDev</p>
-            <p>Contacto: Contacto@syscont.com | Desarrollador: hazieldev@gmail.com</p>
+            <div id="foot-acerca">
+                <h4>Contacto</h4>
+                <p style="color: darkgray;">Llámanos o mándanos un mensaje para que un asesor nuestro te atienda sin compromiso alguno.</p>
+                <p><i class="fa-solid fa-phone" style="color: #166cb3;"></i> <a href="tel:4772178728">+52 477 2178728</a></p>
+                <p><i class="fa-solid fa-envelope" style="color: #166cb3;"></i> <a href="#footer-acerca" onclick="correo_info()">info@syscontrolmx.com</a></p>
+                <p><i class="fa-solid fa-user" style="color: #166cb3;"></i> Carlos Eduardo Sepúlveda Arias.</p>
+                
+
+            </div>
+            <div id="foot-dev">
+                <h4>información</h4>
+                <p> <span style="color:darkgray;">Aceptamos:</span> <i class="fa-brands fa-cc-visa" style="color: #166cb3;"></i> VISA/ <i class="fa-brands fa-cc-mastercard" style="color: #166cb3;"></i> Mastercard</p>
+                <p> <span style="color:darkgray">Desarrollador web:</span> <a onclick="Correu()" href="#foot-dev">Hazieldev@gmail.com</a> </p>
+                <p> <i class="fa-solid fa-location-dot" style="color: #166cb3;"></i> <a href="https://goo.gl/maps/ZFfMoPsAqFuBrujw6" target="_blank">Londres 308, Col. Andrade, León, Guanajuato c.p. 37020</a></p>
+                <p style="color: darkgray;">©Syscontrolmx 2023. TODOS LOS DERECHOS RESERVADOS.</p>
+                
+            </div>
+            
+            <div id="foot-logo">
+                <img src="images/Syscontrol Seguridad.png" alt="">
+            </div>
         </footer>
 
     </div>

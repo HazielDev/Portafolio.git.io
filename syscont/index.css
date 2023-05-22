@@ -85,6 +85,9 @@ align-items: center;
 justify-content:  center;
 font-family: 'Poppins', sans-serif;
 color: var(--azulito);
+text-align: center;
+
+font-size: 0.9em;
 
 margin: 0;
 padding: 0;
@@ -93,7 +96,7 @@ padding: 0;
 
 #telefono p{
 
-margin:0;
+margin:5px;
 padding: 0;
 
 }
@@ -268,15 +271,24 @@ z-index: 90;
 
 }
 
+#whats:hover{
+
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+url(images/whatsapp\ logo.png);
+border-radius: 50%;
+
+}
+
 #cont{
 
 height: 500px;
 width: 45%;
 background-image: url(camera.jpg);
 background-size: 600px;
-background-position: 90px -140px;
+background-position: 120px -180px;
 object-fit: cover;
 background-repeat: no-repeat;
+border-right: solid 20px var(--azulito);
 
 }
 
@@ -284,9 +296,10 @@ background-repeat: no-repeat;
 
 margin-top: 50px;
 display: flex;
-height: 500px;
+height: 400px;
 width: 100%;
 background-color: var(--negrito);
+overflow: hidden;
 
 }
 
@@ -391,16 +404,59 @@ border-top-right-radius: 0;
 
 .carousel{
 
+  position: relative;
   width:100%;
   margin: 0px 0px;
 
 }
 
+.boton-carrusel{
+
+position: absolute;
+height: 150px;
+width: 100px;
+background-color: var(--negrito);
+border-radius: 20px;
+color: azure;
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-size: 2.5em;
+
+z-index: 99;
+
+user-select: none;
+
+transition: all 0.3s ease-in;
+
+}
+
+.boton-carrusel:hover{
+
+background-color: var(--azulito);
+cursor: pointer;
+
+}
+
+#boton-left{
+
+  left: 5px;
+
+}
+
+#boton-right{
+
+  right: 5px;
+
+}
+
+
 #acerca{
 
 display: flex;
 margin-top: 50px;
-height: 500px;
+height: 600px;
 width: 100%;
 background-color: var(--negrito);
 font-family: 'Poppins', sans-serif;
@@ -409,7 +465,11 @@ color: aliceblue;
 /* min-height:50%;
 background:linear-gradient(150deg, #166cb3 50%, #000000 50%) */
 
-background-image: url(images/Tecnologias\ Syscont.jpg);
+align-items: center;
+justify-content: center;
+
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+url(images/Tecnologias\ Syscont.jpg);
 background-repeat: no-repeat;
 background-size: 50%;
 
@@ -424,6 +484,9 @@ background-size: 50%;
   height: 100%;
   padding: 2%;
 
+  align-items: center;
+  justify-content: center;
+
 }
 
 #acerca-formulario{
@@ -436,13 +499,69 @@ background-size: 50%;
 
 }
 
+#acerca-formulario p{
+  margin-top: 20px;
+  font-size: 1.6em;
+
+}
+
+#o{
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#o p{
+
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.4em;
+
+}
+
+.input-form{
+
+  border-radius: 13px;
+  background-color: var(--negrito);
+  background-color: rgb(83, 83, 83);
+  border: solid 1px rgb(83, 83, 83);
+  color: azure;
+}
+
+::placeholder {
+  color: rgb(173, 173, 173);
+}
+
+#button-enviar{
+
+  background-color: var(--azulito);
+  border: solid 1px aliceblue;
+  color: aliceblue;
+  transition: background-color 0.5s ease;
+
+}
+
+#button-enviar:hover{
+
+color: #166cb3;
+background-color: aliceblue;
+
+}
 
 section{
 
+margin-top: 20px;
 display: flex;
 width: 100%;
 height: 530px;
 
+align-items: center ;
 
 }
 
@@ -450,12 +569,13 @@ height: 530px;
 
 display: flex;
 
+height: 450px;
 width: 0;
 flex-grow: 1;
 object-fit: cover;
-opacity: 0.8;
+opacity: 0.9;
 transition: .5s ease;
-filter: contrast(95%);
+filter: contrast(90%);
 
 background-position: center;
 background-size: 150%;
@@ -466,6 +586,8 @@ justify-content: center;
 
 font-size: 0em;
 
+flex-direction: column;
+
 }
 
 .section-div:hover{
@@ -473,11 +595,11 @@ font-size: 0em;
 width: 300px;
 opacity: 1;
 filter: contrast(100%);
-background-size: 100%;
+background-size: 105%;
 
 color: azure;
 
-font-size: 1.8em;
+font-size: 1em;
 
 }
 
@@ -486,15 +608,57 @@ footer{
 display: flex;
 align-items: center;
 justify-content: center;
-flex-direction: column;
+flex-direction: row;
+background-color: var(--negrito);
 
 margin-top: 60px;
-height: 110px;
+height: 380px;
 width: 100%;  
 
 border-top: 1px solid rgb(206, 206, 206);
 
-font-weight: bold;
+/* font-weight: bold; */
+color: azure;
+gap: 3%;
+
+}
+
+#foot-acerca, #foot-dev, #foot-logo{
+
+display: flex;
+flex-direction: column;
+
+width: 30%;
+height: 100%;
+
+align-items: start;
+justify-content: center;
+text-align: start;
+
+}
+
+#foot-logo{
+
+align-items: center;
+
+}
+
+#foot-logo img{
+
+    height: 50%;
+
+}
+
+footer a{
+
+  text-decoration: none;
+  color: aliceblue;
+
+}
+
+footer a:hover{
+
+  color: var(--azulito);
 
 }
 
@@ -556,7 +720,7 @@ font-weight: bold;
     #acerca{
 
       flex-direction: column;
-      height: 900px;
+      height: 1150px;
       background-image: none;
 
     }
@@ -572,8 +736,16 @@ font-weight: bold;
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
      url(images/fondo-programacion.jpg);
      background-repeat: no-repeat ;
+      background-size: 220%;
 
     }
+
+    #acerca-formulario p{
+
+      font-size: 1.2em;
+
+    }
+
 
     #acerca-formulario{
 
@@ -596,6 +768,12 @@ font-weight: bold;
       .carousel{
 
         margin: 0px 60px;
+
+      }
+
+      .boton-carrusel{
+
+        display: none;
 
       }
 
@@ -626,6 +804,7 @@ font-weight: bold;
 
       #mini-menu{
 
+        width: 100%;
         justify-content: center;
 
       }
@@ -637,11 +816,7 @@ font-weight: bold;
 
       }
 
-      footer{
-
-        font-size: 0.8em;
-
-      }
+     
       
       #telefono{
 
@@ -651,7 +826,8 @@ font-weight: bold;
 
       #titulo a{
 
-        font-size: 1.1em;
+        font-size: 1.2em;
+        margin: 0;
 
       }
 
@@ -679,6 +855,42 @@ font-weight: bold;
         background-size: cover;
         object-fit: cover;
       
+      }
+
+      footer{
+
+        font-size: 0.8em;
+        flex-direction: column;
+        height: 650px;
+        gap: 5%;
+      }
+
+      footer h4{
+
+        font-size: 1.4em;
+
+      }
+
+      #foot-acerca, #foot-dev, #foot-logo{
+
+        height: 30%;
+        width: 100%;
+
+        align-items: center;
+        text-align: center;
+
+      }
+
+      #foot-acerca{
+
+        margin-top: 40px;
+
+      }
+
+      #foot-logo img{
+
+        height: 100%;
+
       }
 
   }
