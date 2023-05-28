@@ -29,16 +29,19 @@ window.location.href = 'mailto:hazieldev@gmail.com?subject=Hola estoy interesado
 setInterval(function() {
     // Código que deseas ejecutar cada segundo
     let laser = document.getElementById("laser");
+    let laser_mobile = document.getElementById("laser-mobile");
 
     turn = !turn;
 
     if(turn == false){
 
         laser.style.display = "none";
+        laser_mobile.style.display = "none";
 
     }else{
 
         laser.style.display = "block";
+        laser_mobile.style.display = "block";
 
     }
 
