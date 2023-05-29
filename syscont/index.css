@@ -43,6 +43,7 @@ width: auto;
 
 #menu-nav{
 
+margin-top: 15px;  
 height: 200px;
 width: 100%;
 border-top: 0;
@@ -151,12 +152,6 @@ background-image: url(images/laser\ 2.png);
 background-size: 8px;
 bottom: 85px;
 left: 93px;
-
-
-}
-
-#laser-mobile{
-
 
 
 }
@@ -445,8 +440,6 @@ border-top: 0;
 border-top-left-radius: 0;
 border-top-right-radius: 0;
 
-
-
 }
 
 .product-text h5{
@@ -469,7 +462,7 @@ font-weight: bold;
 
 position: absolute;
 height: 150px;
-width: 100px;
+width: 120px;
 background-color: var(--negrito);
 border-radius: 20px;
 color: azure;
@@ -487,10 +480,52 @@ transition: all 0.3s ease-in;
 
 }
 
+.button-top{
+
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid var(--negrito);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--negrito);
+  transform: translateY(-0.6em);
+  transition: transform 0.1s ease;
+
+  justify-content: center;
+
+  height: 105%;
+  width: 100%;
+
+}
+
+.button-top i{
+
+  margin-top: 35px;
+
+}
+
+.boton-carrusel:hover .button-top {
+
+  color: #fff;
+  background-color: var(--azulito);
+  transform: translateY(-0.85em);
+
+}
+
+.boton-carrusel:active .button-top {
+  /* Push the button downwards when pressed */
+  transform: translateY(-0.2em);
+}
+
 .boton-carrusel:hover{
 
-background-color: var(--azulito);
 cursor: pointer;
+
+}
+
+.boton-carrusel:active{
+
+transform: translateY(0);
 
 }
 
