@@ -462,7 +462,7 @@ font-weight: bold;
 
 position: absolute;
 height: 150px;
-width: 120px;
+width: 100px;
 background-color: var(--negrito);
 border-radius: 20px;
 color: azure;
@@ -519,6 +519,8 @@ transition: all 0.3s ease-in;
 
 .boton-carrusel:hover{
 
+transform: scale(105%);
+background-color: var(--azulito);
 cursor: pointer;
 
 }

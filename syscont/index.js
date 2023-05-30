@@ -13,6 +13,24 @@
 let turn = false;
 let derecha = false;
 
+function correo_acerca(){
+
+let nombre = document.getElementById("nombre").value;
+let correo = document.getElementById("correo").value;
+let mensaje = document.getElementById("mensaje").value;
+
+var body = "Mi nombre es: " + nombre + "\n";
+body += "\n";
+body += "Mi correo es: " + correo + "\n";
+body += "\n";
+body += mensaje;
+body += "\n";
+
+var mailtoUrl = "mailto:syscontrolmx.com?subject=Hola estoy interesado en un producto Syscontrol&body=" + encodeURIComponent(body);
+
+window.open(mailtoUrl);
+
+}
 
 function correo_info(){
 
