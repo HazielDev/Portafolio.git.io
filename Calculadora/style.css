@@ -1,0 +1,162 @@
+
+:root{
+
+    --blanc:#ffffff;
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins-Light.ttf);
+}
+
+body{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+    height: 100vh;
+    gap: 2%;
+    font-family: "Poppins";
+}
+
+
+#bloque{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 500px;
+width: 350px;
+border-radius: 20px;
+background-color: var(--blanc);
+gap: 2%;
+
+}
+
+#bar{
+
+    margin-top: 20px;
+    height: 85px;
+    width: 95%;
+    border-radius: 20px;
+    background-color: #97EAD2;
+    border: 1px solid #6faa99;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+#results{
+
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: var(--blanc);
+
+}
+
+.fila{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 50px;
+    gap: 2%;
+
+}
+
+#lista{
+
+    width: 120px;
+
+}
+
+.boton{
+
+    height: 100%;
+    width: 72px;
+    border-radius: 10px;
+    background-color: #2D0320;
+
+}
+
+.boton:hover{
+
+    cursor: pointer;
+
+}
+
+.boton-top{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 96%;
+height: 45px;
+background-color: #3C91E6;
+border-radius: 10px;
+transform: translateY(-0.2em);
+transition: transform 0.1s ease;
+border: 1px solid black;
+color: #ffffff;
+font-weight: 800;
+user-select: none;
+}
+
+.boton-top:hover{
+    transform: translateY(-0.35em);
+}
+
+.boton-top:active{
+    transform: translateY(0em);
+}
+
+.filters{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+
+    height: 40px;
+
+}
+
+.filters input{
+
+    width: 30%;
+    border-radius: 20px;
+    font-size: 0.8em;
+
+}
+
+textarea{
+
+    resize: none;
+    border-radius: 20px;
+    height: 90%;
+    width: 98%;
+
+}
+
+@media (max-width:768px) {
+
+    body{
+
+        flex-direction: column;
+        height: 1150px;
+
+    }
+
+}

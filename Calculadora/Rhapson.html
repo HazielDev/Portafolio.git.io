@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Método de Newton-Raphson</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+  <script>
+    function calcularNewtonRaphson() {
+      var funcion = document.getElementById("funcion").value;
+      var x = parseFloat(document.getElementById("x").value);
+      var errorDeseado = parseFloat(document.getElementById("error").value);
+      var iteraciones = parseInt(document.getElementById("iteraciones").value);
+
+      var resultado = document.getElementById("resultado");
+      resultado.innerHTML = ""; // Limpiar resultados anteriores
+
+      // Crear función a partir de la expresión ingresada
+      var f = math.parse(funcion).compile();
+
+      // Crear función para evaluar la derivada de la función
+      var df = math.derivative(funcion, 'x').compile();
+
+      // Aplicar el método de Newton-Raphson
+      var error = Number.POSITIVE_INFINITY;
+      var i;
+
+      if (!isNaN(iteraciones)) {
+        // Realizar iteraciones según el número especificado
+        for (i = 0; i < iteraciones && error > errorDeseado; i++) {
+          var fx = f.evaluate({ x: x });
+          var fpx = df.evaluate({ x: x });
+
+          var iteracionActual = "Iteración " + (i + 1) + ": x = " + x + ", f(x) = " + fx;
+          resultado.innerHTML += iteracionActual + "<br>";
+
+          if (fpx === 0) {
+            resultado.innerHTML += "El método no converge (f'(x) = 0)";
+            return;
+          }
+
+          var xNuevo = x - (fx / fpx);
+          error = Math.abs(xNuevo - x);
+          x = xNuevo;
+        }
+      } else if (!isNaN(errorDeseado)) {
+        // Realizar iteraciones hasta que el error sea menor o igual al error deseado
+        for (i = 0; error > errorDeseado; i++) {
+          var fx = f.evaluate({ x: x });
+          var fpx = df.evaluate({ x: x });
+
+          var iteracionActual = "Iteración " + (i + 1) + ": x = " + x + ", f(x) = " + fx;
+          resultado.innerHTML += iteracionActual + "<br>";
+
+          if (fpx === 0) {
+            resultado.innerHTML += "El método no converge (f'(x) = 0)";
+            return;
+          }
+
+          var xNuevo = x - (fx / fpx);
+          error = Math.abs(xNuevo - x);
+          x = xNuevo;
+        }
+      }
+
+      if (error <= errorDeseado) {
+        resultado.innerHTML += "La aproximación convergió: x ≈ " + x + " (Error absoluto < " + errorDeseado + " después de " + i + " iteraciones)";
+      } else {
+        resultado.innerHTML += "El método no converge después de " + i + " iteraciones";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Método de Newton-Raphson</h1>
+  <label for="funcion">Función:</label>
+  <input type="text" id="funcion"><br>
+
+  <label for="x">Valor inicial (x):</label>
+  <input type="number" id="x"><br>
+
+  <label for="error">Error absoluto deseado:</label>
+  <input type="number" step="any" id="error"><br>
+
+  <label for="iteraciones">Número de iteraciones:</label>
+  <input type="number" id="iteraciones"><br>
+
+  <button onclick="calcularNewtonRaphson()">Calcular</button>
+
+  <h2>Resultados:</h2>
+  <div id="resultado"></div>
+</body>
+</html>
