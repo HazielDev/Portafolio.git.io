@@ -2,7 +2,7 @@
 
 :root{
 
-    --azulito: #2c55e9;;
+    --azulito: #2c55e9;
     --azul: #374269;
     --verde:  #1cb148;
     --blanco: whitesmoke;
@@ -75,6 +75,10 @@ background-color: var(--blanco);
 
 #display-title{
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     background-color: var(--azul);
     color: #fff;
@@ -215,10 +219,11 @@ color: rgb(28, 177, 72);
 
 .cont-item{
 
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     height: 350px;
-    width: 280px;
+    width: 250px;
     border-radius: 20px;
     border: 1px solid darkgray;
 
@@ -383,6 +388,8 @@ body{
 .cont-item{
 
     margin-top: 30px;
+    height: 250px;
+    width: 180px;
 
 }
 
@@ -402,13 +409,6 @@ width: 100%;
 footer p{
 
     font-size: 0.7em;
-
-}
-
-.cont-item{
-
-    height: 250px;
-    width: 80%;
 
 }
 

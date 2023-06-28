@@ -30,7 +30,7 @@ if (alturaActual > 100){
 
 if(anchoPantalla < 750){
 
-    if (alturaActual > 1600){
+    if (alturaActual > 1150){
 
         elemento.style.display = "flex";
         cont_enviar.style.display = "flex";

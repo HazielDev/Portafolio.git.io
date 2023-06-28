@@ -43,5 +43,19 @@ $(document).ready(function() {
 
     });
 
+    $("#item-4").click(function(){
+            
+        $("#cont-display").fadeToggle();
+        $("#display-title").text("Separadores Electromagnéticos De Elevación");
+        $("#display-text").text("El electroimán de elevación es un dispositivo electromagnético diseñado específicamente para la manipulación de cargas pesadas en entornos industriales. Con su capacidad para generar un campo magnético intenso y controlable, los electroimanes de elevación se han convertido en una opción popular en diversas industrias, incluyendo la construcción, la metalurgia y la logística. Este artículo explora las características, aplicaciones y beneficios clave de los electroimanes de elevación en el entorno industrial. Los electroimanes de elevación están compuestos por una bobina conductora de corriente eléctrica y un núcleo magnético. Cuando se aplica una corriente eléctrica a la bobina, se genera un campo magnético fuerte alrededor del núcleo, lo que provoca la atracción magnética de materiales ferrosos. Estos electroimanes suelen ser controlados mediante un sistema de interruptores o controles remotos que permiten activar y desactivar el campo magnético según sea necesario.");
+
+    });
+
+    $("#hazieldev").click(function(){
+    
+    window.location.href = 'mailto:hazieldev@gmail.com?subject=Hola estoy interesado en una pagina web&body=Mi nombre es:';   
+    
+    });
+
 });
     

@@ -55,7 +55,7 @@ color: greenyellow;
     position: absolute;
     height: 80px;
     width: auto;
-    top: 5px;
+    top: 10px;
     left: 10px;
 
 }
@@ -133,6 +133,12 @@ justify-content: end;
 .nav-a{
 
     font-size: initial;
+    display: block;
+
+}
+
+footer a{
+
     display: block;
 
 }
