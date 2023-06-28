@@ -7,6 +7,7 @@ let elemento = document.getElementById("cont-contacto");
 let cont_enviar = document.getElementById("cont-enviar");
 let title = document.getElementById("title");
 let fila = document.getElementById("fila-products");
+let anchoPantalla = window.innerWidth;
 fila.style.display = "none"
 title.style.color = "whitesmoke";
 elemento.style.display = "none";
@@ -27,6 +28,21 @@ if (alturaActual > 100){
 
 }
 
+if(anchoPantalla < 750){
+
+    if (alturaActual > 1600){
+
+        elemento.style.display = "flex";
+        cont_enviar.style.display = "flex";
+    
+        elemento.classList.add("animate__animated", "animate__backInLeft");
+        cont_enviar.classList.add("animate__animated", "animate__backInRight");
+        ///console.log(alturaActual);
+    
+    }
+
+}else{
+
 if (alturaActual > 450){
 
     elemento.style.display = "flex";
@@ -35,6 +51,8 @@ if (alturaActual > 450){
     elemento.classList.add("animate__animated", "animate__backInLeft");
     cont_enviar.classList.add("animate__animated", "animate__backInRight");
     console.log("Se agrego el efecto");
+
+}
 
 }
 
