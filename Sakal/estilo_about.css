@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+i {
+
+    font-size: 100%;
+    padding: 10px;
+    color: rgb(28, 177, 72);
+
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    background-color: #374269;
+    color: whitesmoke;
+}
+
+.parallax {
+    height: 350px; /* altura deseada */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+  }
+  .parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    background-color: rgba(3, 34, 0, 0.5); /* color deseado */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+#todo{
+
+margin-top: 5px;
+padding: 60px;
+width: 100%;
+height: 500px;
+text-align: center;
+
+/*background-color: aqua;*/
+
+}
+
+#cosas{
+
+    margin-top: 80px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+
+}
+
+#cosa_caja{
+
+    margin: 10px;
+    width: 250px;
+    height: 50px;
+
+}
+
+#contactanos{
+
+    margin-top: 35px;
+
+
+}
+
+#contacto{
+
+    padding: 20px;
+    text-align: center;
+    background-color: #474f6d;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#cont_contacto{
+
+    text-align: start;
+    padding: 30px;
+    height: 730px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#mapa{
+
+margin: 80px;
+
+
+}
+
+#form{
+
+    margin: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    background-color: #f5f5f5;
+    color: black;
+     padding: 20px;
+     text-align: center;
+    font-size: 14px;
+    }
+    
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+        color: rgb(28, 177, 72);
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    .footer-logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    .footer-text {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+
+@media screen and (max-width: 800px) {
+
+    body{
+
+        font-size: 14px;
+
+    }
+
+    #todo{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+
+    }
+
+    input{
+
+        width: 80%;
+
+    }
+
+    iframe{
+
+        margin-top: 10%;
+
+    }
+
+    #cosas{
+
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+    }
+
+    #cosa_caja{
+
+        margin-top: 15%;
+        height: auto;
+
+    }
+
+    #cont_contacto{
+
+        flex-direction: column;
+        height: 1200px;
+        align-items: center;
+        text-align: center;
+        padding: 0%;
+        width: 100%;
+
+    }
+
+    #form{
+
+        margin:5px;
+        height: 800px;
+
+    }
+
+}
+
+    ::-webkit-scrollbar {
+        width: 13px; 
+        background-color: #444444;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: #5c5c5c; 
+        border-radius: 2px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #8f8f8f; 
+      }

@@ -1,0 +1,140 @@
+  
+#cont-nav-display{
+
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+
+}
+
+#nav-display{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+    background-color: whitesmoke;
+    gap: 5%;
+
+}
+
+#nav-tachita{
+
+    position: absolute;
+    font-size: 4em;
+    top: 20px;
+    right: -60px;
+    color: white;
+
+}
+
+#nav-tachita:hover{
+
+color: greenyellow;
+
+}
+
+#logo-nav{
+
+    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+#logo{
+
+    position: absolute;
+    height: 80px;
+    width: auto;
+    top: 5px;
+    left: 10px;
+
+}
+
+nav{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: 1em;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    gap: 2%;
+    
+    }
+    
+nav a{
+    
+    color: black;
+    text-decoration: none;
+    
+}
+    
+nav a:hover{
+    
+color: rgb(28, 177, 72);
+    
+}
+    
+ i {
+ 
+ margin-right: 2px;
+ font-size: 120%;
+ color: rgb(28, 177, 72);
+    
+ } 
+ 
+#hamburger{
+
+    display: none;
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+a {
+    display: none;
+}
+
+#hamburger{
+
+    display: block;
+    font-size: 3em;
+    margin-right: 20px;
+
+}
+
+#hamburger:hover{
+
+    color: greenyellow;    
+
+}
+
+nav{
+
+justify-content: end;
+
+}
+
+.nav-a{
+
+    font-size: initial;
+    display: block;
+
+}
+
+}
