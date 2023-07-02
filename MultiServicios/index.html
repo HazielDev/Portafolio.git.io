@@ -12,7 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/barra.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Pages/carrusel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Multi Servicios | Del Centro</title>
     <link rel="icon" type="image/x-icon" href="images/multiservicios del centro icon.png">
 
@@ -35,28 +37,68 @@
 
 <div id="hero-container">
     <img src="images/multiservicios del centro logo.png" alt="" id="mini-logo">
-    <div id="imagenes">
-        <div class="slider-img" id="slider-img-0" style="background-image: url(images/Camion-Multiservicios.jpg);"></div>
-        <div class="slider-img" id="slider-img-1" style="background-image: url(images/Multiservicios-grua.jpg);"></div>
+    <div id="cont-texto-anim">
+        <h3 id="texto-anim">Multi Servicios</h3>
+        <h3 id="texto-anim-sub">Impulsa tu proyecto con profesionalidad.</h3>
+        <a href="#contacto" id="boton-texto-anim">Contacto</a>
     </div>
+    <div id="imagenes">
+        <div class="slider-img" id="slider-img-0" style="background-image: url(images/Multi\ Servicios\ Grua\ Industrial.jpg);"></div>
+        <div class="slider-img" id="slider-img-1" style="background-image: url(images/Multi\ Servicios\ slider\ Monta\ Cargas.jpeg); left: 100%;"></div>
+        <div class="slider-img" id="slider-img-2" style="background-image: url(images/MultiServicios\ slider\ paneles\ solares.jpeg); left: 100%;"></div>
+        <div class="slider-img" id="slider-img-3" style="background-image: url(images/Multi\ Servicios\ Obra\ Civil.jpeg); left: 100%;"></div>
+    </div>
+    <div id="slider-filter"></div>
     <div id="slider-barras">
         <div class="slider-barra" id="slider-barra-0" onclick="changePos(0)"></div>
         <div class="slider-barra" id="slider-barra-1" onclick="changePos(1)"></div>
         <div class="slider-barra" id="slider-barra-2" onclick="changePos(2)"></div>
         <div class="slider-barra" id="slider-barra-3" onclick="changePos(3)"></div>        
     </div>
-
+    <div id="boton-left-slider" class="boton-slider" onclick="slide_isq()"> <i class="fa-solid fa-chevron-left"></i> </div>
+    <div id="boton-right-slider" class="boton-slider" onclick="slide_der()"> <i class="fa-solid fa-chevron-right"></i> </div>
 </div>
 
 <div id="servicios">
 
-    <div id="Mant"> 
+    <div id="Mant">
+
         <img src="images/logo multiservicios.PNG" alt="">
+        <div id="Mant-cont">
+        <div id="Mant-somos">
         <h3>¿Quienes sómos?</h3>
         <div style="width: 70%; height: 1px; background-color: rgb(255, 123, 0);"></div>
         <p>En Multi Servicios Del Centro somos expertos en mantenimiento industrial y ofrecemos una variedad de servicios, incluyendo paneles solares, obra civil, estructuras, montacargas, gas LP y grúas. Contamos con un equipo altamente capacitado y nos enfocamos en brindar soluciones personalizadas para garantizar el máximo rendimiento de tus instalaciones y equipos. Nuestra atención al cliente, calidad de servicio y compromiso con la excelencia nos convierten en tu elección confiable para todas tus necesidades industriales. ¡Contáctanos hoy mismo y descubre cómo podemos ayudarte en Multi Servicios Del Centro!</p>
-    
+        </div>
         <div id="Mant-servicios">
+            <h3>Nuestros servicios</h3>
+            <div style="width: 70%; height: 1px; background-color: rgb(255, 123, 0);"></div>
+            
+            <div id="carousel">
+                <div class="item" id="item-1" onclick="mover(1)">
+                        <div class="product-img" style="background-image: url(images/Multiservicios\ Paneles\ Solares.jpg);"></div>
+                </div>
+                <div class="item" id="item-2" onclick="mover(2)">
+                    <div class="product-img" style="background-image: url(images/MultiServicios\ Montacargas.jpg);"></div>
+                </div>
+                <div class="item" id="item-3" onclick="mover(3)">
+                    <div class="product-img" style="background-image: url(images/MultiServicios\ Obra\ Civil.jpg);"></div>
+                </div>
+                <div class="item" id="item-4" onclick="mover(4)">
+                    <div class="product-img" style="background-image: url(images/MultiServicios\ Gas\ Lp.jpg);"></div>
+                </div>
+                <div class="item" id="item-5" onclick="mover(5)">
+                    <div class="product-img" style="background-image: url(images/MultiServicios\ Estructuras.jpg);"></div>
+                </div>
+                <div class="item" id="item-6" onclick="mover(6)">
+                    <div class="product-img" style="background-image: url(images/Multiservicios-grua.jpg);"></div>
+                </div>
+                
+                <div id="boton-left" class="boton-carrusel" onclick="mover_isq()"> <i class="fa-solid fa-chevron-left"></i> </div>
+                <div id="boton-right" class="boton-carrusel" onclick="mover_der()"> <i class="fa-solid fa-chevron-right"></i> </div>
+            
+            </div>
+        <div style="display: flex; flex-direction: row;">
         <ul>
             <li>Panales Solares</li>
             <li>Obra Civil</li>
@@ -68,46 +110,128 @@
             <li>Grúas</li>
         </ul>
         </div>
-        
         <a href="" class="boton">Conocer Servicios</a>
-
-    </div>
-
-</div>
-
-<div id="clientes">
-
-    <div id="img-clientes">
-        <h3>Clientes Importantes</h3>
-        <div id="logos-clientes">
-            <img src="images/Grupo Elektra.png" alt="">
-            <img src="images/Grupo Elektra.png" alt="">
-            <img src="images/Grupo Elektra.png" alt="">
-            <img src="images/Grupo Elektra.png" alt="">
-            
+        </div>
         </div>
     </div>
-    
+
 </div>
 
-<div id="contacto">
+<h3 id="title-testi" style="color: #b61616; font-size: 2em;">Nuestros ultimos servicios</h3>
+<div style="height: 1px; width: 70%; background-color: #b61616;"></div>
+
+<div id="testimonios">
+
+    <div id="testi-info">
+            <h4>Conecta con nosotros</h4>
+            <p style="width: 98%;">En Multi Servicios Del Centro, nos enorgullece haber brindado servicios de mantenimiento industrial de alta calidad a nuestros clientes durante muchos años. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha convertido en líderes en el sector. Ya sea que necesites paneles solares, servicios de obra civil, estructuras, montacargas, gas LP o grúas, nuestro equipo altamente capacitado está listo para proporcionarte soluciones personalizadas y garantizar el máximo rendimiento de tus instalaciones y equipos.</p>
+    </div>
+
+    <div class="testi">
+        <div class="testi-img" style="background-image: url(images/User.png);"></div>
+        <div class="testi-text">
+            <i class="fa-solid fa-quote-left" style="color: #b61616;"></i>
+            <p>Multi Servicios Del Centro instaló paneles solares en mi casa y estoy encantada. Su equipo fue profesional y eficiente. Ahora ahorro mucho en mis facturas de electricidad. ¡Los recomiendo!</p>
+            <i class="fa-solid fa-quote-right" style="color: #b61616;"></i>
+        </div>
+        <div class="testi-user">
+            <p><span class="color-red">Gabriela Franco -</span> Doctora</p>
+        </div>
+        <div class="testi-franja"></div>
+    </div>
+
+    <div class="testi">
+        <div class="testi-img" style="background-image: url(images/User.png);"></div>
+        <div class="testi-text">
+            <i class="fa-solid fa-quote-left" style="color: #b61616;"></i>
+            <p>Multi Servicios Del Centro hizo una obra civil en mi empresa y quedé impresionada. Su equipo fue rápido y los resultados fueron excelentes. Los contrataré nuevamente en el futuro.</p>
+            <i class="fa-solid fa-quote-right" style="color: #b61616;"></i>
+        </div>
+        <div class="testi-user">
+            <p><span class="color-red">Ana Gutierrez -</span> Directora de obra</p>
+        </div>
+        <div class="testi-franja"></div>
+    </div>
+
+    <div class="testi">
+        <div class="testi-img" style="background-image: url(images/User.png);"></div>
+        <div class="testi-text">
+            <i class="fa-solid fa-quote-left" style="color: #b61616;"></i>
+            <p>Necesitaba una grúa para un proyecto y Multi Servicios Del Centro fue la elección perfecta. Su grúa era moderna y el personal muy hábil. Cumplieron con todas mis expectativas.</p>
+            <i class="fa-solid fa-quote-right" style="color: #b61616;"></i>
+        </div>
+        <div class="testi-user">
+            <p><span class="color-red">Luis Negrette -</span> Maquinista</p>
+        </div>
+        <div class="testi-franja"></div>
+    </div>
+</div>
+
+<div id="contacto" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+url(images/Necesitas\ Multiservicios.jpg);">
 <div id="img-contacto">
     <h3>¿Necesitas uno de nuestros servicios?</h3>
     <div style="height: 1px; width: 70%; background-color: #fff;"></div>
-    <p>Contactanos</p>
+    <p>¡Contactanos!</p>
     <a href="" id="contacto-boton">Enviar whatsapp <i class="fa-brands fa-whatsapp"></i></a>
 </div>
+<div id="o"><p>ó</p></div>
+<form action="" method="post">
 
+<h3 style="margin-bottom: 0;">¡Mandanos un mensaje </h3>
+<h3 style="margin: 0;">a nuestro correo <i class="fa-solid fa-envelope"></i>!</h3>
+
+<input type="text" name="" id="" class="imp" placeholder="Nombre completo">
+<input type="text" name="" id="" class="imp" placeholder="Correo">
+<input type="text" name="" id="" class="imp" placeholder="Telefono">
+<input type="text" name="" id="" class="imp" placeholder="Nombre de empresa">
+<input type="text" name="" id="" class="imp" placeholder="Puesto">
+<textarea name="" id="" class="imp" style="height: 100px;" placeholder="Mensaje"></textarea>
+<input type="button" value="Enviar Mensaje" id="btn-form">
+
+</form>
 
 </div>
 
 <footer>
 
+<div id="footer-info">
+<div id="footer-menu" class="footer-item">
+<h3 style="margin-top: 60px;">Menu</h3>
+<a href="">Inicio</a>
+<a href="">Servicios</a>
+<a href="">Productos</a>
+<a href="">Contacto</a>
+</div>
+<div id="footer-contacto" class="footer-item">
+<h3 style="margin-top: 60px;">Informacion de contacto</h3>
+<p>Correo electronico: <a href="">correoejemplo.com</a></p>
+<p>Telefono: <a href="">477-180-40-49</a></p>
+<p>Desarrollador web: <a href="">hazieldev@gmail.com</a></p>
+<p>Dirección: <a href="">google.com</a></p>
+</div>
+<div id="footer-logo" style="background-image: url(images/multiservicios\ del\ centro\ logo.png);"></div>
+</div>
 
+<div style="height: 1px; background-color: rgb(114, 114, 114); width: 80%;"></div>
+
+<div id="footer-clientes">
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+</div>
+
+<div id="mini-footer">
+    <p>COPYRIGHT @2023 MULTISERVICIOS DEL CENTRO | TODOS LOS DERECHOS RESERVADOS</p>
+</div>
 
 </footer>
 
 </div> <!-- TODO DIV FIN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/index.js"></script>
+
+
 </body>
 </html>
