@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troleo Kronk</title>
+    <title>Pagina misteriosa</title>
 </head>
+
+<style>
+
+    video{
+
+        display: none;
+
+    }
+
+    button{
+
+        height: 40px;
+        width: 100px;
+        background-color: rgb(195, 0, 255);
+        color: #fff;
+        border: 1px solid violet;
+        border-radius: 20px;
+
+    }
+
+</style>
+
 <body>
-    <video autoplay loop>
+    <video loop id="vidio">
         <source src="videoplayback.mp4" type="video/mp4">
     </video>
+
+    <button id="boton">Confia en mi ;)</button>
+
+    <script>
+
+    const boton = document.getElementById('boton');
+    const video = document.getElementById("vidio");
+
+    function reproducirVideo() {
+        video.play();
+        video.style.display = "block";
+        boton.style.display = "none";
+    }
+
+    boton.addEventListener('click', reproducirVideo);
+
+    </script>
+
 </body>
 </html>
