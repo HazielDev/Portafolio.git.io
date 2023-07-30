@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --verde: #025930;
+    --lima: #2FA61C;
+    --ama: #EAF205;
+    --cafe: #BA9C82;
+    --vanilla: #F2F2F2;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 63, 39);
+
+}
+
+#todo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#landing{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 110px;
+    height: 300px;
+    width: 90%;
+    background-color: var(--vanilla);
+
+}
+
+#landing-options{
+
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-size: 1.1em;
+
+}
+
+#landing-options i{
+
+    color: var(--lima);
+    font-size: 1.8em;
+
+}
+
+.land-option{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.land-btn{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--vanilla);
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+    background-color: var(--lima);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.land-btn:hover{
+
+    background-color: #025930;
+    transform: scale(110%);
+
+}
+
+#cont-form-mensaje{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 90%;
+    margin-top: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: left;
+}
+
+#form-mensaje{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 450px;
+    width: 70%;
+    background-color: var(--vanilla);
+    border-left: 1px solid darkgray;
+
+}
+
+#form-mensaje h3{
+
+    font-size: 1.4em;
+
+}
+
+.imp{
+
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    margin-top: 15px;
+    height: 30px;
+    width: 70%;
+    background-color: var(--vanilla);
+    font-family: "Poppins";
+    text-indent: 10px;
+
+}
+
+#btn-imp{
+
+    margin-top: 20px;
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid var(--verde);
+    color: var(--vanilla);
+    background-color: var(--verde);
+    font-family: "Poppins";
+    transition: all 0.3s ease-in-out;
+
+}
+
+#btn-imp:hover{
+
+    cursor: pointer;
+    background-color: var(--lima);
+    transform: scale(110%);
+
+}
+
+#cont-info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 600px;
+    width: 90%;
+    background-color: var(--vanilla);
+
+}
+
+#cont-info h3{
+
+    font-size: 1.5em;
+
+}
+
+#info{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 90%;
+
+}
+
+#info-text, #info-img{
+
+ height: 90%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 45%;
+ background-size: cover;
+
+}
+
+#info-img{
+
+    height: 100%;
+    width: 50%;
+
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid var(--lima);
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: var(--verde);
+    color: #ffffff;
+
+}
+
+#rayita{
+
+    height: 70%;
+
+}
+
+@media (max-width:768px) {
+
+    body{
+
+        font-size: 0.8em;
+
+    }
+
+    .land-option p{
+
+        text-align: center;
+
+    }
+
+    #rayita{
+
+        height: 50%;
+
+    }
+
+    #cont-info{
+
+        height: 710px;
+
+    }
+
+    #info{
+
+        flex-direction: column-reverse;
+
+    }
+
+    #info-img{
+
+        height: 39%;
+        width: 100%;
+
+    }
+
+    #info-text{
+
+        height: 40%;
+        width: 95%;
+
+    }
+
+    #info-text h3{
+
+        margin-top: 0;
+
+    }
+
+    form h3{
+
+        text-align: center;
+
+    }
+
+}

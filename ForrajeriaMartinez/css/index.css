@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --verde: #025930;
+    --lima: #2FA61C;
+    --ama: #EAF205;
+    --cafe: #BA9C82;
+    --vanilla: #F2F2F2;
+
+}
+
+body{
+
+padding: 0;
+margin: 0;
+font-family: "Poppins";
+
+}
+
+#todo{
+
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#guats{
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 80px;
+    width: 80px;
+    z-index: 98;
+    background-size: 80px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+#guats:hover{
+
+    cursor: pointer;
+    filter: brightness(50%);
+
+}
+
+#hero-container{
+
+    height: 400px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: var(--vanilla);
+    font-size: 2em;
+
+}
+
+#servicios{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 900px;
+    width: 95%;
+    margin-top: 10px;
+
+    
+    }
+    
+    #Mant{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 820px;
+        width: 100%;
+        border-radius: 50px;
+        background: #ffffff;
+        box-shadow:  20px 20px 16px #d9d9d9,
+                     -20px -20px 16px #ffffff;
+        border: 1px solid var(--verde);
+        text-align: center;
+        
+    }
+    
+    #Mant p{
+    
+    width: 90%;
+    
+    }
+    
+    #Mant img{
+    
+    width: clamp(160px,40%,200px);
+    
+    height: auto;
+    
+    margin-top: 20px;
+    
+    }
+    
+    #Mant h3{
+    
+        font-size: 2.1em;
+        margin: 15px;
+    
+    }
+    
+    #Mant-servicios{
+    
+        display: flex;
+        flex-direction: row;
+    
+        align-items: center;
+        justify-content: center;
+    
+        width: 100%;
+    
+        gap: 5%;
+    
+    }
+    
+    .boton{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: var(--verde);
+        border-radius: 55px;
+        margin-top: 30px;
+        transition: all 0.3s ease-in;
+        width: 50%;
+        height: 55px;
+        border: 3px solid var(--lima);
+        font-family: "Poppins";
+        font-size: 1em;
+    
+    }
+    
+    .boton:hover{
+    
+        background-color: var(--lima);
+        transform: scale(110%);
+        cursor: pointer;
+    
+    }
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 600px;
+    width: 100%;
+    border-top: 10px solid var(--lima);
+    background-color: var(--verde);
+
+}
+
+form h2{
+
+    font-size: 2.3em;
+    color: #F2F2F2;
+
+}
+
+.imp{
+
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 80%;
+    height: 60px;
+    background-color: #02361e;
+    color: #F2F2F2;
+    font-size: 1em;
+    border: 1px solid var(--lima);
+    border-radius: 10px;
+    font-family: "Poppins";
+
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid var(--lima);
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: var(--verde);
+    color: #ffffff;
+
+}
+
+
+@media (max-width:768px) {
+
+
+    body{
+
+        font-size: 0.7em;
+
+    }
+
+    h1{
+
+        text-align: center;
+
+    }
+
+    .imp{
+
+        height: 40px;
+
+    }
+
+}

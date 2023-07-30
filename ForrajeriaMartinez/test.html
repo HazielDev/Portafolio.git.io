@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body style="position: relative;">
+    
+    <style>
+        #miDiv {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            cursor: move;
+        }
+    </style>
+
+    <div id="miDiv">Arrastra este div</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
+    <script>
+   $(document).ready(function() {
+      var div = $('#miDiv');
+      var isDragging = false;
+      var touchOffset = { x: 0, y: 0 };
+
+      // Event listener for touch start event
+      div.on('touchstart', function(event) {
+        isDragging = true;
+        var touch = event.originalEvent.touches[0];
+        touchOffset.x = touch.clientX - div.offset().left;
+        touchOffset.y = touch.clientY - div.offset().top;
+      });
+
+      // Event listener for touch move event
+      $(document).on('touchmove', function(event) {
+        if (isDragging) {
+          var touch = event.originalEvent.touches[0];
+          var x = touch.clientX - touchOffset.x;
+          div.css('left', x + 'px');
+        }
+      });
+
+      // Event listener for touch end event
+      $(document).on('touchend', function(event) {
+        isDragging = false;
+      });
+    });
+    </script>
+
+</body>
+</html>
