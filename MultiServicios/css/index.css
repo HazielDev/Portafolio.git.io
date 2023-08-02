@@ -44,62 +44,6 @@ align-items: center;
 
 }
 
-#nav-menu{
-
-position:fixed;
-top: 0px;
-left: 0px;
-height: 80px;
-width: 100%;
-background-color: var(--rojo);
-z-index: 999;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 5%;
-
-}
-
-#cont-logo{
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-
-    position: absolute;
-    left: 0;
-    height: 130%;
-    width: 300px;
-    background-color: white;
-    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
-
-    border: 1px solid rgb(224, 224, 224);
-
-}
-
-#nav-logo{
-
-margin-left: 35px;
-    
-}
-
-#nav-menu a{
-
-    color: var(--blan);
-    text-decoration: none;
-    transition: all 0.3s ease-in;
-
-    font-weight: bold;
-    font-size: 1.1em;
-
-}
-
-#nav-menu a:hover{
-
-    transform: scale(120%);
-
-}
 
 #mini-logo{
 
@@ -111,7 +55,7 @@ width: 200px;
 top: 20px;
 left: 20px;
 
-z-index: 997;
+z-index: 97;
 
 }
 
@@ -527,7 +471,8 @@ background-repeat: no-repeat;
     flex-direction: row;
     height: 60%;
     color: var(--rojo);
-    font-family: "Poppins-title";
+    font-family: "Poppins";
+    font-weight: 800;
     font-size: 0.95em;
 
 }
@@ -575,6 +520,12 @@ background-repeat: no-repeat;
     font-family: "Poppins-title";
     color: #ffffff;
     font-size: 1.5em;
+}
+
+::placeholder{
+
+    text-indent: 10px;
+
 }
 
 .imp{
@@ -776,6 +727,12 @@ width: 100%;
 
 @media (max-width:768px) {
 
+body{
+
+    font-size: 0.8em;
+
+}
+
 #mini-logo{
 
  left: 10px;
@@ -810,7 +767,7 @@ width: 100%;
 
 #servicios, #Mant{
 
-    height: 1000px;
+    height: 840px;
 
 }
 
@@ -823,7 +780,7 @@ width: 100%;
 
 #Mant{
 
-    height: auto;
+    height: 830px;
 
 }
 
@@ -833,9 +790,15 @@ width: 100%;
 
 }
 
+#Mant-servicios{
+
+    margin-top: 20px;
+
+}
+
 #title-testi{
 
-    margin-top: 150px;
+    margin-top: 70px;
     text-align: center;
 
 }
@@ -844,14 +807,14 @@ width: 100%;
 
     margin-top: 60px;
     flex-direction: column-reverse;
-    height: 1500px;
+    height: 1450px;
 
 }
 
 .testi{
 
-    width: 90%;
-    height: 300px;
+    width: 70%;
+    height: 330px;
 
 }
 
@@ -870,7 +833,7 @@ width: 100%;
 
 #contacto{
 
-
+    height: auto;
     flex-direction: column;
 
 }
@@ -878,22 +841,66 @@ width: 100%;
 #img-contacto{
 
 margin-left: 0;
+height: 400px;
 width: 100%;
+font-size: 1.3em;
+
+}
+
+#o{
+
+    height: auto;
+    width: 100%;
+
+}
+
+.imp{
+
+    width: 85%;
 
 }
 
 #contacto form{
 
-    height: auto;
     clip-path: none;
-    height: 900px;
+    height: 650px;
     width: 100%;
 
 }
 
 footer{
+    
+    height: 600px;
+    margin-top: 50px;
+    justify-content: space-between;
+    border-top: 10px solid var(--ama);
 
-    margin-top: 590px;
+}
+
+#footer-info{
+
+    font-size: 0.9em;
+    height: 40%;
+
+}
+
+#footer-info p{
+
+    margin-top: 10px;
+
+}
+
+#footer-clientes{
+    
+    margin-top: 10px;
+    height: 20%;
+
+}
+
+.cliente-img{
+
+    height: 50%;
+    width: 20%;
 
 }
 

@@ -1,0 +1,170 @@
+
+<!-- https://1472567.my.canva.site/ -->
+<!-- https://1472567.my.canva.site/proyectos -->
+<!-- https://1472567.my.canva.site/productos -->
+<!-- https://1472567.my.canva.site/contacto -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/barra.css">
+    <link rel="stylesheet" href="Pages/carrusel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Multi Servicios | Servicios</title>
+    <link rel="icon" type="image/x-icon" href="images/multiservicios del centro icon.png">
+
+</head>
+<body>
+
+<div id="todo">
+
+    <nav id="nav-menu">
+            
+        <link rel="stylesheet" href="css/nav.css">
+
+        <div id="cont-menu-burger" style="display: none;">
+            <div id="tachita"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div id="menu-burger">
+                <img src="images/logo multiservicios.PNG" alt="">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div id="cont-nav-logo">
+            <img src="images/logo multiservicios.PNG" alt="" id="nav-logo" style="height: auto; width: 155px;">
+        </div>
+        <a class="linka" href="index.html">Inicio</a>
+        <a class="linka" href="">Servicios</a>
+        <a class="linka" href="contacto.html">Contacto</a>
+        <i class="fa-solid fa-bars" id="burger"></i>
+    </nav>
+
+<div id="hero-container">
+    <img src="images/multiservicios del centro logo.png" alt="" id="mini-logo">
+    <div id="cont-texto-anim">
+        <h3 id="texto-anim">Paneles Solares</h3>
+    </div>
+    <div id="imagenes">
+        <div class="slider-img" id="slider-img-0" style="background-image: url(images/MultiServicios\ slider\ paneles\ solares.jpeg);"></div>
+        <div class="slider-img" id="slider-img-1" style="background-image: url(images/Multi\ Servicios\ Obra\ Civil.jpeg); left: 100%;"></div>
+        <div class="slider-img" id="slider-img-2" style="background-image: url(images/MultiServicios\ Estructuras.jpg); left: 100%;"></div>
+        <div class="slider-img" id="slider-img-3" style="background-image: url(images/Multi\ Servicios\ slider\ Monta\ Cargas.jpeg); left: 100%;"></div>
+        <div class="slider-img" id="slider-img-4" style="background-image: url(images/MultiServicios\ Gas\ Lp.jpg); left: 100%;"></div>
+        <div class="slider-img" id="slider-img-5" style="background-image: url(images/Multi\ Servicios\ Grua\ Industrial.jpg); left: 100%;"></div>
+    </div>
+    <div id="slider-filter"></div>
+    <div id="slider-barras">
+        <div class="slider-barra" id="slider-barra-0" onclick="changePos(0)"></div>
+        <div class="slider-barra" id="slider-barra-1" onclick="changePos(1)"></div>
+        <div class="slider-barra" id="slider-barra-2" onclick="changePos(2)"></div>
+        <div class="slider-barra" id="slider-barra-3" onclick="changePos(3)"></div>
+        <div class="slider-barra" id="slider-barra-4" onclick="changePos(4)"></div>
+        <div class="slider-barra" id="slider-barra-5" onclick="changePos(5)"></div>        
+    </div>
+    <div id="boton-left-slider" class="boton-slider" onclick="slide_isq()"> <i class="fa-solid fa-chevron-left"></i> </div>
+    <div id="boton-right-slider" class="boton-slider" onclick="slide_der()"> <i class="fa-solid fa-chevron-right"></i> </div>
+</div>
+
+<div id="cont-cont-info">
+<div id="cont-info-service" style="display: none;">
+
+    <div id="service-ball-1"></div>
+    <div id="service-ball-2"></div>
+
+    <div id="info-service">
+    <div id="cont-img-info">
+        <div id="img-info-service" style="background-image: url(images/Multiservicios\ Paneles\ Solares.jpg);"></div>
+    </div>
+    <div id="cont-info-info">
+        <p id="subtitle-info">Energia solar</p>
+        <h2 id="title-info">Paneles Solares</h2>
+        <p id="text-info">El Panel Solar de Alta Eficiencia es una solución innovadora y sostenible para la generación de energía renovable. Diseñado con tecnología de vanguardia, este panel solar aprovecha la radiación solar para convertirla en electricidad de manera eficiente y respetuosa con el medio ambiente.</p>
+        <a href="" id="info-boton">Enviar whatsapp <i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    </div>
+
+</div>
+</div>
+
+<div id="contacto" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+url(images/Necesitas\ Multiservicios.jpg);">
+<div id="img-contacto">
+    <h3>¿Necesitas uno de nuestros servicios?</h3>
+    <div style="height: 1px; width: 70%; background-color: #fff;"></div>
+    <p>¡Contactanos!</p>
+    <a href="" id="contacto-boton">Enviar whatsapp <i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<div id="o"><p>ó</p></div>
+<form action="" method="post">
+
+<h3 style="margin-bottom: 0;">¡Mandanos un mensaje </h3>
+<h3 style="margin: 0;">a nuestro correo <i class="fa-solid fa-envelope"></i>!</h3>
+
+<input type="text" name="" id="" class="imp" placeholder="Nombre completo">
+<input type="text" name="" id="" class="imp" placeholder="Correo">
+<input type="text" name="" id="" class="imp" placeholder="Telefono">
+<input type="text" name="" id="" class="imp" placeholder="Nombre de empresa">
+<input type="text" name="" id="" class="imp" placeholder="Puesto">
+<textarea name="" id="" class="imp" style="height: 100px;" placeholder="Mensaje"></textarea>
+<input type="button" value="Enviar Mensaje" id="btn-form">
+
+</form>
+
+</div>
+
+<div>
+
+
+
+</div>
+
+<footer>
+
+<div id="footer-info">
+<div id="footer-menu" class="footer-item">
+<h3 style="margin-top: 60px;">Menu</h3>
+<a href="">Inicio</a>
+<a href="servicios.html">Servicios</a>
+<a href="">Productos</a>
+<a href="">Contacto</a>
+</div>
+<div id="footer-contacto" class="footer-item">
+<h3 style="margin-top: 60px;">Informacion de contacto</h3>
+<p>Correo electronico: <a href="">correoejemplo.com</a></p>
+<p>Telefono: <a href="">477-180-40-49</a></p>
+<p>Desarrollador web: <a href="">hazieldev@gmail.com</a></p>
+<p>Dirección: <a href="">google.com</a></p>
+</div>
+<div id="footer-logo" style="background-image: url(images/multiservicios\ del\ centro\ logo.png);"></div>
+</div>
+
+<div style="height: 1px; background-color: rgb(114, 114, 114); width: 80%;"></div>
+
+<div id="footer-clientes">
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+    <div class="cliente-img" style="background-image: url(images/ayuntamiento\ leon.png);"></div>
+</div>
+
+<div id="mini-footer">
+    <p>COPYRIGHT @2023 MULTISERVICIOS DEL CENTRO | TODOS LOS DERECHOS RESERVADOS</p>
+</div>
+
+</footer>
+
+</div> <!-- TODO DIV FIN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/servicios.js"></script>
+<script src="js/nav.js"></script>
+
+
+</body>
+</html>

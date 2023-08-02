@@ -23,16 +23,28 @@
 
 <div id="todo">
 
-<nav id="nav-menu">
-<div id="cont-logo">
-    <img src="images/logo multiservicios.PNG" alt="" id="nav-logo" style="height: auto; width: 155px;">
-</div>
+    <nav id="nav-menu">
+            
+        <link rel="stylesheet" href="css/nav.css">
 
-<a href="">Inicio</a>
-<a href="">Servicios</a>
-<a href="">Productos</a>
-<a href="">Contacto</a>
-</nav>
+        <div id="cont-menu-burger" style="display: none;">
+            <div id="tachita"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div id="menu-burger">
+                <img src="images/logo multiservicios.PNG" alt="">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div id="cont-nav-logo">
+            <img src="images/logo multiservicios.PNG" alt="" id="nav-logo" style="height: auto; width: 155px;">
+        </div>
+        <a class="linka" href="index.html">Inicio</a>
+        <a class="linka" href="servicios.html">Servicios</a>
+        <a class="linka" href="contacto.html">Contacto</a>
+        <i class="fa-solid fa-bars" id="burger"></i>
+    </nav>
 
 
 <div id="hero-container">
@@ -231,6 +243,7 @@ url(images/Necesitas\ Multiservicios.jpg);">
 </div> <!-- TODO DIV FIN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/nav.js"></script>
 
 
 </body>
