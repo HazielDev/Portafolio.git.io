@@ -483,7 +483,7 @@ align-items: center;
     align-items: center;
     margin-top: 100px;
     /* border-top: 10px solid var(--rojo); */
-    height: 650px;
+    height: 750px;
     width: 100%;
     background-color: var(--gris);
     
@@ -558,6 +558,9 @@ align-items: center;
         width: 200px;
         background-size: 100%;
         background-repeat: no-repeat;
+        background-position: center;
+    filter: brightness(150%);
+    filter: grayscale(100%);
     
     }
     

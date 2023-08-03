@@ -247,7 +247,7 @@ footer{
     align-items: center;
     margin-top: 80px;
     border-top: 10px solid var(--ama);
-    height: 650px;
+    height: 750px;
     width: 100%;
     background-color: var(--gris);
     
@@ -322,6 +322,9 @@ footer{
         width: 200px;
         background-size: 100%;
         background-repeat: no-repeat;
+        background-position: center;
+    filter: brightness(150%);
+    filter: grayscale(100%);   
     
     }
     
