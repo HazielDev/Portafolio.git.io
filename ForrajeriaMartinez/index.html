@@ -38,7 +38,7 @@
 
     <div id="todo">
 
-    <div id="guats" style="background-image: url(images/whatsapp\ logo.png);"></div>
+    <div id="guats" style="background-image: url(images/whatsapp\ logo.png);" onclick="window.open('https://api.whatsapp.com/send?phone=524881361652', '_blank');"></div>
 
     <div id="hero-container" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(images/bolsas\ forrajera.jpg);">
         <h1 style="margin: 2px;">Forrajera Martinez</h1>
@@ -75,21 +75,21 @@
     
     </div>
 
-    <form action="">
+    <form action="form.php" method="POST">
 
             <h2>Mandanos Un Mensaje</h2>
 
-            <input class="imp" type="text" placeholder="Nombre Completo">
-            <input class="imp" type="email" placeholder="Correo Electronico">
-            <input class="imp" type="tel" placeholder="Numero de Telefono">
-            <input class="imp" type="text" placeholder="Mensaje">
-            <input type="button" value="Enviar" class="boton">
+            <input class="imp" name="nombre" type="text" placeholder="Nombre Completo">
+            <input class="imp" name="correo" type="email" placeholder="Correo Electronico">
+            <input class="imp" name="numero" type="tel" placeholder="Numero de Telefono">
+            <input class="imp" name="mensaje" type="text" placeholder="Mensaje">
+            <input type="submit" value="Enviar" class="boton">
 
     </form>
 
     <footer>
         <p>DERECHOS DE AUTOR @ 2023 FORRAJERIA MARTINEZ</p>
-        <p>Desarrollador web: hazieldev@gmail.com</p>
+        <p>Desarrollador web: <a href="https://www.cosmobius.com" target="_blank">Cosmobius.com</a></p>
     </footer>
 
 </div>

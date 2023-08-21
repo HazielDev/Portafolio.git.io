@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Forrajeria Martinez | Panel</title>
+</head>
+<body>
+    
+    <nav>
+
+        <div id="cont-menu-burger" style="display: none;">
+            <div id="tachita"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div id="menu-burger">
+                <img src="images/logo.jpg" alt="">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="productos.html">Productos</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+        <i class="fa-solid fa-bars" id="burger"></i>
+
+        <div id="cont-logo">
+            <img src="images/logo forrajeria.jpg" alt="">
+        </div>
+    </nav>
+
+    <div id="todo">
+
+            <form action="" id="form-add">
+
+                <div id="text-form">
+
+                <h2>Agregar producto.</h2>
+                <input type="text" class="imp" placeholder="Nombre del producto">
+                <textarea type="text" class="imp" id="form-desc" placeholder="Descripción del producto"></textarea>
+                <select name="select" class="imp">
+                    <option value="value1">Alimentos</option>
+                    <option value="value2">Sueros</option>
+                    <option value="value3">Sales</option>
+                    <option value="value4">Vacunas</option>
+                    <option value="value5">Jeringas</option>
+                    <option value="value6">Varios</option>
+                    <option value="value7">Herraduras</option>
+                    <option value="value8">Accesorios para gallos</option>
+                    <option value="value9">Medicamentos</option>
+                    <option value="value10">Desparacitantes</option>
+                    <option value="value11">Alimento para caballos</option>
+                    <option value="value12">Vitaminas</option>
+
+                  </select>
+
+                </div>
+
+                <div id="upload-add">
+
+                    <div id="img-add">
+                        <p id="texto-image">Sin imagen</p>
+                    </div>
+                    <input name="imagen" type="file" id="imagen" accept="image/*" onchange="VistaPrevia()">
+                    <label for="imagen" id="btn-img">Subir imagen</label>
+
+                    <a href="" id="btn-upload">Registrar Producto</a>
+    
+                </div>
+
+            </form>
+
+            
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Js/panel.js"></script>
+
+</body>
+</html>

@@ -215,6 +215,12 @@ footer{
 
 }
 
+footer a{
+
+    color: #fff;
+
+}
+
 
 @media (max-width:768px) {
 

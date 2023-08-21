@@ -49,7 +49,7 @@
                 <div class="land-option">
                     <i class="fa-brands fa-whatsapp"></i>
                     <p>Mandenos un whatsapp.</p>
-                    <a href="" class="land-btn">Enviar</a>
+                    <a href="https://api.whatsapp.com/send?phone=524881361652" class="land-btn">Enviar</a>
                 </div>
             </div>
 
@@ -57,14 +57,14 @@
 
         <div id="cont-form-mensaje" class="sombra" style="background-image: url(images/Ferrajeria\ Martinez\ fondo\ form.jpg); display: none;">
 
-            <form action="" id="form-mensaje" >
+            <form action="form.php" id="form-mensaje" method="POST" >
                 <h3>Nos interesaria escucharte.</h3>
                 <div style="height: 1px; width: 80%; background-color: darkgrey;"></div>
-                <input type="text" class="imp" placeholder="Nombre Completo" style="margin-top: 50px;">
-                <input type="text" class="imp" placeholder="Correo Electronico">
-                <input type="text" class="imp" placeholder="Numero de Telefono">
-                <input type="text" class="imp" placeholder="Mensaje">
-                <input type="button" value="Enviar" id="btn-imp">
+                <input name="nombre" type="text" class="imp" placeholder="Nombre Completo" style="margin-top: 50px;">
+                <input name="correo" type="text" class="imp" placeholder="Correo Electronico">
+                <input name="numero" type="text" class="imp" placeholder="Numero de Telefono">
+                <input name="mensaje" type="text" class="imp" placeholder="Mensaje">
+                <input type="submit" value="Enviar" id="btn-imp">
             </form>
 
         </div>
@@ -84,7 +84,7 @@
         
         <footer>
             <p>DERECHOS DE AUTOR @ 2023 FORRAJERIA MARTINEZ</p>
-            <p>Desarrollador web: hazieldev@gmail.com</p>
+            <p>Desarrollador web: <a href="https://www.cosmobius.com" target="_blank">Cosmobius.com</a></p>
         </footer>
 
 

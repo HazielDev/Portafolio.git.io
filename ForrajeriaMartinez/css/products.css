@@ -164,6 +164,12 @@ footer{
 
 }
 
+footer a{
+
+    color: #fff;
+
+}
+
 @media (max-width:768px) {
 
     body{
@@ -174,8 +180,9 @@ footer{
 
     .item{
 
+        margin-right: 5px;
         height: 180px;
-        width: 130px;
+        width: 120px;
 
     }
 

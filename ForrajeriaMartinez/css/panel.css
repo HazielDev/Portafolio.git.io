@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --verde: #025930;
+    --lima: #2FA61C;
+    --ama: #EAF205;
+    --cafe: #BA9C82;
+    --vanilla: #F2F2F2;
+
+}
+
+body{
+
+padding: 0;
+margin: 0;
+font-family: "Poppins";
+background-color: var(--verde);
+
+}
+
+#todo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#form-add{
+
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-top: 110px;
+    height: 80vh;
+    width: 95%;
+    background-color: var(--vanilla);
+
+}
+
+#text-form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+
+}
+
+#form-desc{
+
+    height: 100px;
+    resize: none;
+
+}
+
+.imp{
+
+    font-family: "Poppins";
+    height: 40px;
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 1em;
+    border: 1px solid var(--verde);
+
+}
+
+#upload-add{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+
+}
+
+#img-add{
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px dotted var(--verde);
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#btn-upload{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 60px;
+    width: 55%;
+    border-radius: 10px;
+    border: 1px solid var(--verde);
+    text-decoration: none;
+    color: var(--vanilla);
+    background-color: var(--verde);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#btn-upload:hover{
+
+    background-color: #fff;
+    color: var(--verde);
+
+}
+
+#imagen{
+
+    display: none;
+
+}
+
+#btn-img{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--vanilla);
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    user-select: none;
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    background-color: var(--verde);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#btn-img:hover{
+
+    cursor: pointer;
+    background-color: var(--vanilla);
+    color: var(--verde);
+
+}
