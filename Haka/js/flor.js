@@ -29,7 +29,7 @@ $(document).ready(function(){
 
             case 4:
 
-                if($("#imp").val() === "chiqui"){
+                if($("#imp").val() === "chiqui" || $("#imp").val() === "Chiqui"){
                     $("#imp").css("display","none")
                     $("#texto").css("display","none")
                     $("#btn").text("Ver tu recompensa")
