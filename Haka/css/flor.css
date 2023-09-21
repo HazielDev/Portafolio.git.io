@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+
+}
+
+.shadow, .sombra{
+
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#todo{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 97%;
+    width: 97%;
+    background-color: pink;
+
+}
+
+#foto{
+
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 10px solid palevioletred;
+
+}
+
+p{
+
+    font-weight: 500;
+
+}
+
+#btn{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 50px;
+    width: 60%;
+    max-width: 300px;
+    background-color: coral;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+#btn:hover{
+
+    cursor: pointer;
+    transform: scale(105%);
+    background-color: rgb(253, 96, 38);
+
+}
+
+#imp{
+
+    height: 30px;
+    margin-bottom: 20px;
+    width: 60%;
+    max-width: 300px;
+    font-family: "Poppins";
+
+}
+
+h2{text-align: center;}
+
+#flor-1 {
+    top: 0%;
+}
+
+#flor-2 {
+    top: 16%;
+}
+
+#flor-3 {
+    top: 32%;
+}
+
+#flor-4 {
+    top: 48%;
+}
+
+#flor-5 {
+    top: 64%;
+}
+
+#flor-6 {
+    top: 80%;
+}
+
+
+.flor{
+
+    position: absolute;
+    height: 300px;
+    top: 0;
+    animation: spin 3s linear infinite;
+    transition: all 5s linear;
+
+}
+
+.flor-l{
+
+    left: -300px;
+
+}
+
+.flor-r{
+
+    right: -300px;
+
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
