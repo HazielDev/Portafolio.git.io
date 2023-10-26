@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --colorx: #2b2b2b;
+    --color0: #111111;
+    --color1: #f5f5f5;
+    --color2: #cd7e0f;
+    --color3: #9f1010;
+
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--color0);
+    font-family: "Poppins";
+    color: var(--color1);
+
+}
+
+#todo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#cont-compra{
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    height: 90%;
+    width: 90%;
+    background-color: var(--colorx);
+    border: 1px solid var(--color2);
+
+}
+
+#whats{
+
+    position: fixed;
+    height: 100px;
+    z-index: 23;
+    right: 16px;
+    bottom: 16px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#whats:hover{
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#face{
+
+    position: fixed;
+    height: 130px;
+    z-index: 23;
+    right: 0px;
+    bottom: 120px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#face:hover{
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+
+#land{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 3rem;
+    height: 400px;
+    width: 90%;
+    background-color: var(--colorx);
+    background-image: url(../images/Chaman\ Ancestral\ Servicios\ Online.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid var(--color2);
+
+}
+
+#cont-info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 90%;
+    padding: 1rem 0;
+    background-color: var(--colorx);
+
+}
+
+#cont-info p, #cont-info h3{
+
+    width: 90%;
+
+}
+
+.title{
+
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: var(--color2);
+    background-color: var(--colorx);
+    border: 1px solid var(--color2);
+    text-decoration: none;
+
+}
+
+
+.cont-servicios{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    height: 390px;
+    width: 95%;
+
+}
+
+.servicios{
+
+    display: flex;
+    flex-direction: row;
+    align-items: end    ;
+    gap: 2rem;
+    height: 70%;
+    width: 100%;
+
+}
+
+.servicio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+    width: 320px;
+    background-color: var(--colorx);
+}
+
+.servicio-img{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--color2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.servicio-title{
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17, 17, 17,0.5);
+
+}
+
+.servicio-btn{
+
+    user-select: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 15px;
+    background-color: var(--color2);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.servicio-btn:hover{
+
+    cursor: pointer;
+    transform: scale(105%);
+    background-color: var(--color1);
+    color: var(--color2);
+
+}

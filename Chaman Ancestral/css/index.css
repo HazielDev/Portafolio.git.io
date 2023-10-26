@@ -1,0 +1,570 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --colorx: #2b2b2b;
+    --color0: #111111;
+    --color1: #f5f5f5;
+    --color2: #cd7e0f;
+
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--color0);
+    font-family: "Poppins";
+    color: var(--color1);
+
+}
+
+.btn{
+
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    width: 40%;
+    background-color: var(--color2);
+    border-radius: 10px;
+    color: var(--color1);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn:hover{
+
+    cursor: pointer;
+    background-color: var(--color1);
+    color: var(--color2);
+    transform: scale(105%);
+
+}
+
+#whats{
+
+    position: fixed;
+    height: 100px;
+    z-index: 23;
+    right: 16px;
+    bottom: 16px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#whats:hover{
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#face{
+
+    position: fixed;
+    height: 130px;
+    z-index: 23;
+    right: 0px;
+    bottom: 120px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#face:hover{
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#todo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#formu-whats{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid var(--color2);
+    height: 90%;
+    width: 90%;
+    background-color: var(--colorx);
+
+}
+
+.imp{
+
+    margin-top: 2rem;
+    font-family: "Poppins";
+    border-radius: 10px;
+    border: 1px solid var(--color2);
+    background-color: var(--color0);
+    color: var(--color1);
+
+}
+
+#input-name{
+
+    height: 40px;
+    width: 50%;
+
+}
+
+#input-mensaje{
+
+    resize: none;
+    height: 120px;
+    width: 50%;
+
+}
+
+.btn-land{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--colorx);
+    height: 80px;
+    width: 80px;
+    top: 45%;
+    color: var(--color2);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+
+}
+
+.btn-land:hover{
+
+    cursor: pointer;
+    color: var(--colorx);
+    transform: scale(105%);
+    background-color: var(--color2);
+
+}
+
+#btn-right{
+
+    right: 16px;
+
+}
+
+#btn-left{
+
+    left: 16px;
+
+}
+
+#land{
+
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+    width: 100%;
+
+}
+
+.slider{
+
+    position: absolute;
+    flex-wrap: wrap;
+    color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+#slider-barras{
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3%;
+
+    z-index: 99;
+
+}
+
+.slider-barra{
+
+height: 3px;
+width: 5%;
+background-color: var(--color1);
+border-radius: 3px;
+transition: all 0.3s ease-in;
+
+}
+
+.slider-barra:hover{
+
+    cursor: pointer;
+
+}
+
+#land h1, #land h2{
+
+    font-weight: 400;
+
+}
+
+#land aside, #land section{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+
+}
+
+#land aside{
+
+    border-radius: 10px;
+    background-color: rgb(33, 33, 33, 0.3);
+
+}
+
+#hechi{
+
+    background-color: rgb(33, 33, 33, 0.9);
+
+}
+
+#land aside p{
+
+    margin-top: 0;
+    width: 80%;
+
+}
+
+#cont-info{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    background-color: var(--colorx);
+    height: 400px;
+    width: 86%;
+
+}
+
+#ojo{
+
+    position: absolute;
+    height: 260px;
+    top: -90px;
+    right: -90px;
+
+}
+
+#text-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+
+}
+
+#text-info p{
+
+    margin-top: 0;
+
+}
+
+#img-info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+
+}
+
+#img-info img{
+
+    border-radius: 10px;
+    width: 80%;
+    border: 3px solid var(--color2);
+
+}
+
+#chaman-info{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 92px;
+    margin-bottom: 32px;
+    width: 86%;
+    height: 750px;
+    background-color: var(--colorx);
+
+}
+
+#flor{
+
+    position: absolute;
+    height: 190px;
+    left: -90px;
+    transform: rotate(330deg);
+
+}
+
+#cont-chaman-img{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 25%;
+    width: 90%;
+
+}
+
+#chaman-img{
+
+    border: 3px solid var(--color2);
+    height: 180%;
+    position: absolute;
+    top: -90px;
+    border-radius: 10px;
+
+}
+
+#chaman-items{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 68%;
+    width: 90%;
+
+}
+
+#chaman-items h2{
+
+    height: 10%;
+
+}
+
+#cont-chaman-items{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 65%;
+    width: 90%;
+
+}
+
+.item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height: 94%;
+    width: 30%;
+    background-color: var(--color2);
+
+}
+
+.item h3{
+
+    font-size: 1.2em;
+
+}
+
+.item-text{
+
+    margin-top: 0px;
+    text-align: center;
+    width: 90%;
+
+}
+
+#chaman-info2{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 750px;
+    width: 92%;
+    background-color: var(--colorx);
+
+}
+
+#amorcita{
+
+    font-size: 8rem;
+    right: -3rem;
+    bottom: -3rem;
+    position: absolute;
+    color: var(--color2);
+
+}
+
+#chaman2-img{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#chaman2-img img{
+
+    border-radius: 10px;
+    border: 3px solid var(--color2);
+
+}
+
+#chaman2-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    height: 80%;
+    width: 35%;
+
+}
+
+#cont-comments{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 4rem;
+    height: 600px;
+    width: 97%;
+    background-color: var(--colorx);
+
+}
+
+#comments{
+
+    gap: 1rem;
+    height: 65%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.comment{
+
+    position: relative;
+    border-radius: 5px;
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid darkgray;
+}
+
+.respond{
+
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: -60px;
+    width: 90%;
+
+}
+
+.comment-user{
+
+    color: var(--color0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: var(--color1);
+
+}
+
+.comment-text{
+
+    width: 90%;
+
+}
+
+@media (max-width:968px) {
+
+    #whats{
+
+        height: 70px;
+        bottom: 2rem;
+
+    }
+
+    #face{
+
+        height: 90px;
+
+    }
+
+}

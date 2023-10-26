@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/prefix.css">
+    <link rel="shortcut icon" href="images/MiniLogo.png" type="image/x-icon">
+    <title>Chamán Ancestral</title>
+</head>
+
+<body>
+    <div id="todo">
+        
+        <img id="whats" onclick="whats()" src="images/whatsapp logo.png" alt="Whatsapp Chamán ancestral">
+        <img id="face" src="images/Logo Facebook.webp" alt="Facebook Chamán ancestral">
+        <nav class="sombra">
+            <div id="cont-menu-lateral" style="display: none;">
+                <div id="formu-whats">
+                    <i class="fa-solid fa-circle-xmark tachita"></i>
+                    <h2>¡Mandanos un Mensaje de Whatsapp!</h2>
+                    <input id="input-name" class="imp" type="text" placeholder="Nombre">
+                    <textarea id="input-mensaje" class="imp" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <p class="btn">Enviar Mensaje</p>
+                </div>
+            </div>
+            <link rel="stylesheet" href="css/nav.css">
+            <img src="images/Logo.png" height="130px" id="logo" alt="Logo Chaman Amarres, Magia Blanca">
+            <a href="" class="nav-item">Inicio <i class="fa-solid fa-house"></i></a>
+            <a href="servicios.html" class="nav-item">Servicios <i class="fa-solid fa-spray-can-sparkles"></i></a>
+            <a href="contacto.html" class="nav-item">Contacto <i class="fa-solid fa-phone"></i></a>
+        </nav>
+
+        <div id="land">
+            
+            <div id="btn-left" class="btn-land sombra" onclick="slide_isq()"><i class="fa-solid fa-chevron-left"></i></div>
+            <div id="btn-right" class="btn-land sombra" onclick="slide_der()"><i class="fa-solid fa-chevron-right"></i></div>
+
+            <div id="slider-0" class="slider" style="background-image: url(images/Amarre\ Online\ Chaman\ ancestral.jpg); background-position: 0px -530px;">
+                <aside style="background-color: rgb(33, 33, 33, 0.4);">
+                    <h1>Amarres y Magia Blanca 💖</h1>
+                    <p>¿Te encuentras atravesando momentos difíciles en tu vida amorosa?</p> 
+                    <p>¿Deseas fortalecer la conexión emocional con alguien especial o recuperar un amor perdido? </p>
+                    <p>No busques más, pues hemos traído para ti una solución ancestral que ha unido corazones por generaciones.</p>
+                </aside>
+                <section>
+                    <h2>¡Contactanos!</h2>
+                    <a class="btn whatsi">Obten una consulta gratis! <i class="fa-brands fa-whatsapp"></i></a>
+                </section>
+            </div>
+            
+            <div id="slider-1" class="slider" style="background-image: url(images/Lectura\ del\ tarot\ online.jpg);">
+                <aside>
+                    <h1>Lectura del Tarot y de Fortuna 🃏</h1>
+                    <p>Descubre lo que las cartas tienen reservado para ti. ¡Déjate guiar por el misterioso mundo del tarot!</p> 
+                    <p>¿Incertidumbre sobre el futuro? Las cartas del tarot te revelarán los secretos que buscas.</p>
+                    <p>El camino hacia tu destino está en las cartas. ¡Ven y descubre tu fortuna!</p>
+                </aside>
+                <section>
+                    <h2>¡Contactanos!</h2>
+                    <a class="btn whatsi">Obten una consulta gratis! <i class="fa-brands fa-whatsapp"></i></a>
+                </section>
+            </div>
+            
+            <div id="slider-2" class="slider" style="background-image: url(images/chaman\ ancestral\ hechiceria.jpg);">
+                <aside style="background-color: rgb(33, 33, 33, 0.7);">
+                    <h1>Hechiceria y Brujería 🌙</h1>
+                    <p>La magia antigua al servicio de tus deseos. Transforma tu realidad con hechicería y brujería.</p> 
+                    <p>Desde tiempos ancestrales, la brujería ha sido una herramienta poderosa. ¿Estás listo para descubrir su poder?</p>
+                    <p>Cada hechizo, una solución. Sumérgete en el mundo místico de la hechicería.</p>
+                </aside>
+                <section>
+                    <h2>¡Contactanos!</h2>
+                    <a class="btn whatsi">Obten una consulta gratis! <i class="fa-brands fa-whatsapp"></i></a>
+                </section>
+            </div>
+            
+            <div id="slider-3" class="slider" style="background-image: url(images/Chaman\ Ancestral\ Protecciones.jpg);">
+                <aside>
+                    <h1>Hechizos de Protección ✨</h1>
+                    <p>Fortalece tu aura y defiéndete de las energías negativas con nuestros hechizos de protección.</p> 
+                    <p>En un mundo lleno de incertidumbres, asegura tu bienestar espiritual con hechizos protectores.</p>
+                    <p>No dejes que las malas vibras te afecten. ¡Protégete con la magia ancestral!</p>
+                </aside>
+                <section>
+                    <h2>¡Contactanos!</h2>
+                    <a class="btn whatsi">Obten una consulta gratis! <i class="fa-brands fa-whatsapp"></i></a>
+                </section>
+            </div>
+
+            <div id="slider-barras">
+                <div class="slider-barra" id="slider-barra-0" onclick="changePos(0)"></div>
+                <div class="slider-barra" id="slider-barra-1" onclick="changePos(1)"></div>
+                <div class="slider-barra" id="slider-barra-2" onclick="changePos(2)"></div>
+                <div class="slider-barra" id="slider-barra-3" onclick="changePos(3)"></div>        
+            </div>
+
+        </div>
+
+        <div id="cont-info" class="sombra">
+            <img id="ojo" src="images/Lecturas del tarot.png" alt="Lecturas del tarot">
+            <div id="text-info">
+                <h3>¿Quieres un amarre?</h3>
+                <p>Te garantizamos un 100% de efectividad en el trabajo</p>
+                <p>Un amarre de amor es un ritual esotérico cuyo propósito es fortalecer o restablecer un vínculo amoroso entre dos personas. Se cree que este ritual puede influir en las energías que rodean una relación, ya sea para solidificar un amor existente, reavivar una pasión que se ha desvanecido o atraer a alguien hacia ti.</p>    
+                <a class="btn whatsi">Contactanos</a>
+            </div>
+            <div id="img-info">
+                <img src="images/vela.jpg" alt="">
+            </div>
+        </div>
+        <div id="chaman-info" class="sombra">
+            <img id="flor" src="images/Amarres.png" alt="hechizos de amor">
+            <div id="cont-chaman-img">
+                    <img id="chaman-img" src="images/Magia Blanca Chamán ancestral.jpg" alt="Chaman ancestral amarre">
+            </div>
+            <div id="chaman-items">
+                <h2>El poder del chamán, magia blanca</h2>
+                <div id="cont-chaman-items">
+                    <div class="item">
+                        <h4><i class="fa-solid fa-heart"></i> Amarres de amor </h4>
+                        <p class="item-text">Los Amarres Fuertes para Atraer al Ser Amado, o dominarlo, son trabajos ideales para potenciar la pasión y el deseo, la atracción será mayor tanto amoroso como sexual y pasional, tu eliges si el dominio es temporal o permanente.</p>
+                    </div>
+                    <div class="item">
+                        <h4><i class="fa-brands fa-pagelines"></i> Relaciones rotas</h4>
+                        <p class="item-text">Entendemos cómo te sientes y queremos ayudarte a mejorar tu relación. Con nuestros servicios, es posible fortalecer el vínculo y la conexión emocional entre tú y la persona que amas. Esperamos poder ayudarte a tener una relación más cariñosa y apasionada.</p>
+                    </div>
+                    <div class="item">
+                        <h4><i class="fa-regular fa-eye"></i> Lectura del tarot</h4>
+                        <p class="item-text">Descubre las respuestas ocultas en las cartas del tarot y embárcate en un viaje introspectivo hacia la comprensión y el autoconocimiento. Nuestros servicios de lectura del tarot usan la sabiduría ancestral de estas cartas místicas.</p>
+                    </div>
+                </div>
+                <a href="servicios.html" style="margin-top: 1rem; justify-content: center; gap: 0.5rem;" class="btn">Ver más servicios <i class="fa-regular fa-circle-question"></i></a>
+            </div>
+        </div>
+
+        <article id="chaman-info2" class="sombra">
+            <i id="amorcita" class="fa-solid fa-sun"></i>
+            <div id="chaman2-img">
+                <img src="images/chaman ancestral.jpg" alt="">
+                <a style="margin-top: 1rem;" class="btn whatsi">Mandanos un Whatsapp! <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div id="chaman2-text">
+                <h2>Efectividad del Chamán Ancestral</h2>
+                <p> El chaman ancestral te abre las puertas a un mundo de sabiduría y poder milenarios. Con técnicas pasadas de generación en generación, nuestros servicios están diseñados para guiarte hacia el destino que anhelas.</p>
+                <p>🔮 <strong>Encuentro de fortuna:</strong> Descubre el camino hacia la riqueza y prosperidad que el universo tiene reservado para ti.</p>
+                <p>❤️ <strong>Amarres de amor:</strong> Fortalece vínculos, encuentra a tu alma gemela y asegura un amor eterno e inquebrantable.</p>
+                <p>🌌 <strong>Hechicería y Brujería:</strong> Mergúllate en las artes antiguas para resolver situaciones que parecen imposibles.</p>
+                <p>💔 <strong>Recupera tu pareja:</strong> Vuelve a encender esa chispa perdida y fortalece el amor y el compromiso entre ambos.</p>
+            </div>
+        </article>
+
+        <div id="cont-comments">
+            <h2 style="margin-top: 3rem;">Comentarios <i class="fa-solid fa-comment"></i></h2>
+            <div id="comments">
+                <div class="comment">
+                    <div class="comment-user"><i class="fa-solid fa-user"></i></div>
+                    <p class="comment-text"><b>Ivan Haziel:</b> Quiero una conuslta de tarot online.</p>
+                    <div class="respond">
+                        <p><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> <b>Chaman Ancestral: </b>claro que si, mandame un Whatsapp!</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-user"><i class="fa-solid fa-user"></i></div>
+                    <p class="comment-text"><b>Karla Franco:</b> El Amarre resulto efectivo, muchas gracias.</p>
+                    <div class="respond">
+                        <p><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> <b>Chaman Ancestral: </b>Un placer Karla, Estoy aqui cuando me necesites 👍</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-user"><i class="fa-solid fa-user"></i></div>
+                    <p class="comment-text"><b>Hector Fuentes:</b> Qué tipo de protección brindas?</p>
+                    <div class="respond">
+                        <p><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> <b>Chaman Ancestral: </b>Desde proteger contra energías negativas hasta atraer prosperidad o amor.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-user"><i class="fa-solid fa-user"></i></div>
+                    <p class="comment-text"><b>Camila Lopez:</b> Disculpe con la lectura de tarot puedo saber si me son fiel?</p>
+                    <div class="respond">
+                        <p><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> <b>Chaman Ancestral: </b>Claro que si, incluso podemos hacerle un amarre de amor, para que sea solo tuyo.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-user"><i class="fa-solid fa-user"></i></div>
+                    <p class="comment-text"><b>Roberto Gaña:</b> Tengo un disque amigo que me debe dinero, puedo hacer algo?</p>
+                    <div class="respond">
+                        <p><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> <b>Chaman Ancestral: </b>Podemos hacerle brujeria para que te pague lo que te debe.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-user"><i class="fa-solid fa-user"></i></div>
+                    <p class="comment-text"><b>Daniela Marquez:</b> Quiero un <strong>amarre online</strong>.</p>
+                    <div class="respond">
+                        <p><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> <b>Chaman Ancestral: </b>Claro que si, mandeme un Whatsapp, y le asesoro con gusto!</p>
+                    </div>
+                </div>
+            </div>
+            <a href="" style="margin-top: 2rem;" class="btn">Ver más comentarios</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <link rel="stylesheet" href="css/footer.css">
+        <div id="cont-footer">
+            <img id="footer-logo" src="images/Logo.png" alt="">
+        <div id="footer-contact">
+            <h3>Información de contacto:</h3>
+            <p>Correo electronico: example@ejemplo.com</p>
+            <p>Numero: +140 493-95-045</p>
+            <p>Desarrollador Web: <a target="_blank" href="https://cosmobius.com">Cosmobius.com</a></p>
+            <p>Chamán Ancestral - <a href="privacidad.html">Aviso de privacidad.</a></p>
+        </div>
+        <div id="footer-menu">
+            <h3>Menu</h3>
+            <a href="">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        </div>
+        <img id="footer-img-mobile" src="images/Logo.png" alt="">
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
