@@ -1,0 +1,48 @@
+::-webkit-scrollbar {
+    width: 13px; 
+    background-color: #444444;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c; 
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8f8f8f; 
+  }
+
+  .shadow, .sombra{
+
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+
+  }
+
+  
+  @keyframes muestra{
+
+    from{
+            opacity: 0;
+            scale: 25%;
+    }
+
+    to{
+
+        opacity: 1;
+        scale: 100%;
+
+    }
+
+  }
+
+
+  .muestra{
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: muestra;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  
+  }

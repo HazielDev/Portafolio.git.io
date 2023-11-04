@@ -1,0 +1,182 @@
+nav{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    height: 120px;
+    width: 100%;
+    background-color: var(--color0);
+    border-bottom: 5px solid var(--color2);
+
+}
+
+#logo{
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 110px;
+
+}
+
+#logo:hover{
+
+    cursor: pointer;
+
+}
+
+#btn-menu {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    font-size: 2rem;
+    color: var(--color2);
+}
+
+.nav-item{
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1em;
+
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.nav-item:hover{
+
+    color: var(--color2);
+
+}
+
+#cont-menu-lateral{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+.tachita{
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--color2);
+    font-size: 2rem;
+
+}
+
+.tachita:hover{
+
+    color: var(--color0);
+    cursor: pointer;
+
+}
+
+.idiom{
+
+    text-decoration: none;
+    color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+    width: auto;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+#idiom{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    top: 35px;
+    right: 50px;
+    z-index: 120;
+    font-weight: 500;
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    
+}
+
+#idiom-linea{
+
+    height: 90%;
+    width: 1px;
+    background-color: var(--color2);
+
+}
+
+#idiom:hover{
+
+    cursor: pointer;
+
+}
+
+#idiom img{
+
+    height: 40px;
+
+}
+
+
+@media (max-width:768px) {
+
+    #idiom{
+
+        right: 20%;
+        font-size: 0.8rem;
+
+    }
+
+    #idiom img{
+
+        height: 30px;
+
+    }
+
+    #btn-menu {
+        display: block;
+    }
+
+    nav { 
+        overflow: hidden;
+        align-items: center;
+    }
+
+    #nav-items {
+        display: none;
+        position: relative;
+        top: 60px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+    }
+}
