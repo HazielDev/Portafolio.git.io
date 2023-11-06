@@ -26,6 +26,18 @@ $(document).ready(function () {
 
     });
 
+    $("#face").click(function(){
+
+        window.location = "https://www.facebook.com/people/Coach-Ancestral/61552755002230/?mibextid=LQQJ4d";
+
+    });
+
+    $("#whats").click(function(){
+
+        window.location = "https://www.facebook.com/people/Coach-Ancestral/61552755002230/?mibextid=LQQJ4d";
+
+    });    
+
 });
 
 

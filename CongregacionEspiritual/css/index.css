@@ -17,8 +17,7 @@ body {
     padding: 0;
     background-color: var(--fondo);
     font-family: "Poppins";
-    color: var(--color1);
-    font-display: swap;
+    color: var(--color1);   
 
 }
 
@@ -769,6 +768,40 @@ body {
 
 }
 
+
+#cont-testi-audios{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 400px;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--color0);
+
+}
+
+#testi-audios{
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+.testi-audio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 @media (max-width:1010px) {
 
 
@@ -932,6 +965,12 @@ body {
 }
 
 @media (max-width:550px) {
+
+    #body{
+
+        font-size: 0.7em;
+
+    }
 
     #angel-3,
     #angel-4{
@@ -1176,4 +1215,11 @@ body {
     #cont-comments a {
         min-width: 250px;
     }
+
+    #cont-testi-audios{
+
+        height: auto;
+
+    }
+
 }

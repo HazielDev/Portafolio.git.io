@@ -15,21 +15,39 @@
         <img id="face" onclick="face()" src="images/Logo Facebook.webp" alt="Facebook Indio Del Amor">
         <nav class="sombra" id="nav">
             <div id="cont-menu-lateral" style="display: none;">
-                <i class="fa-solid fa-circle-xmark tachita"></i>
-                <div id="cont-compra">
-                    <div id="paypal-buttons-container"><h2>Seleccione su metodo de pago para el servicio: <b id="service-paypal"></b></h2></div>
+                <div id="formu-whats">
+                    <i class="fa-solid fa-circle-xmark tachita"></i>
+                    <h2>¡Mandanos un Mensaje de Whatsapp!</h2>
+                    <input id="input-name" class="imp" type="text" placeholder="Nombre">
+                    <textarea id="input-mensaje" class="imp" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <p class="btn" id="send-">Enviar Mensaje</p>
                 </div>
+                <!-- <div id="all-comments">
+                    
+                </div> -->
             </div>
             <link rel="stylesheet" href="css/nav.css">
-            <img src="images/Logo.png" height="130px" id="logo" alt="Logo Chaman Amarres, Magia Blanca">
+            <img src="images/Logo.png" id="logo" alt="Logo Chaman Amarres, Magia Blanca">
             <div id="nav-items">
                 <a href="index.html" class="nav-item">Inicio <i class="fa-solid fa-house"></i></a>
                 <a href="servicios.html" class="nav-item">Servicios <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 <a href="contacto.html" class="nav-item">Contacto <i class="fa-solid fa-phone"></i></a>
+                <a href="blog.html" class="nav-item">Blog <i class="fa-solid fa-newspaper"></i></a>
             </div>
             <i class="fa-solid fa-bars" id="btn-menu"></i>
+            <div id="idiom">
+                <div id="mexico" class="idiom">
+                    <img src="images/mexico.png" alt="">
+                    <p>Mx</p>
+                </div>
+                <div id="idiom-linea"></div>
+                <a href="en/index.html" id="usa" class="idiom">
+                    <img src="images/Usa.png" alt="">
+                    <p>USA</p>
+                </a>
+            </div>
         </nav>
-        
+
         <div id="land">
             <h1>Servicios - Indio Del Amor</h1>
         </div>
@@ -53,7 +71,7 @@
                 </div>
                 <div class="servicio">
                     <div class="servicio-img" style="background-image: url(images/Amarres\ para\ parejas\ en\ duelo.jpg);">
-                        <h3 class="servicio-title">Amarre de amor</h3>
+                        <h3 class="servicio-title">Endulzamiento y ligamentos</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>
@@ -64,7 +82,7 @@
         
         <div id="cont-servicios-amarres" class="cont-servicios">
 
-            <div class="title">Fortuna y Suerte <i class="fa-solid fa-clover"></i></div>
+            <div class="title">Magia y Espiritualidad <i class="fa-solid fa-clover"></i></div>
 
             <div id="servicios-amarres" class="servicios">
                 <div class="servicio">
@@ -97,7 +115,7 @@
             <div id="servicios-amarres" class="servicios">
                 <div class="servicio">
                     <div class="servicio-img" style="background-image: url(images/hechiceria\ online.jpg);">
-                        <h3 class="servicio-title">Hechicería</h3>
+                        <h3 class="servicio-title">Cambia tu suerte</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>
@@ -109,13 +127,13 @@
                 </div>
                 <div class="servicio">
                     <div class="servicio-img" style="background-image: url(images/Magia\ Negra.jpg);">
-                        <h3 class="servicio-title">Magía negra</h3>
+                        <h3 class="servicio-title">Sanación Energetica</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>
                 <div class="servicio">
                     <div class="servicio-img" style="background-image: url(images/Conjuro.jpg);">
-                        <h3 class="servicio-title">Conjuro</h3>
+                        <h3 class="servicio-title">Sanación Espiritual</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>
@@ -143,7 +161,7 @@
                 </div>
                 <div class="servicio">
                     <div class="servicio-img" style="background-image: url(images/Limpia.jpg);">
-                        <h3 class="servicio-title">Limpia</h3>
+                        <h3 class="servicio-title">Magia Blanca</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>
@@ -158,13 +176,25 @@
             <div class="servicios">
                 <div class="servicio">
                     <div class="servicio-img" style="background-image: url(images/Fortuna.jpg);">
-                        <h3 class="servicio-title">Adivinación y tarot</h3>
+                        <h3 class="servicio-title">Tarot de los Angeles</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>
                 <div class="servicio">
-                    <div class="servicio-img" style="background-image: url(images/Como\ saber\ si\ mi\ pereja\ me\ es\ infiel.jpg);">
-                        <h3 class="servicio-title">Saber si mi pareja es infiel</h3>
+                    <div class="servicio-img" style="background-image: url(images/Cosmo\ y\ Auras.jpg);">
+                        <h3 class="servicio-title">Astrología</h3>
+                    </div>
+                    <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-img" style="background-image: url(images/Numerologia.jpg);">
+                        <h3 class="servicio-title">Numerología</h3>
+                    </div>
+                    <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-img" style="background-image: url(images/Fortuna.jpg);">
+                        <h3 class="servicio-title">Caracolas Brasileñas</h3>
                     </div>
                     <a class="servicio-btn">Comprar Servicio <i class="fa-solid fa-spray-can-sparkles"></i></a>
                 </div>

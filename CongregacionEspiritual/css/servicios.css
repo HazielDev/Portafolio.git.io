@@ -179,13 +179,17 @@ body{
 
     display: flex;
     flex-direction: row;
-    align-items: end    ;
+    align-items: end;
     gap: 2rem;
     height: 70%;
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
     padding-bottom: 10px;
 
+}
+
+.servicios::-webkit-scrollbar {
+    height: 10px; /* Ancho de la barra de desplazamiento */
 }
 
 .servicio{

@@ -4,11 +4,11 @@
 
 :root {
 
-    --colorx: #dbdbdb;
-    --color0: #dbdbdb;
+    --colorx: #fff;
+    --color0: #fff;
     --color1: #050505;
-    --color2: #e0a331;
-    --fondo: #beb37e;
+    --color2: #beb37e;
+    --fondo: #f3edd3;
 
 }
 
@@ -32,6 +32,7 @@ body{
     padding: 8px;
     width: 40%;
     background-color: var(--color2);
+    border: 1px solid var(--color2);
     border-radius: 10px;
     color: var(--color1);
     text-decoration: none;
@@ -42,7 +43,7 @@ body{
 .btn:hover{
 
     cursor: pointer;
-    background-color: var(--color1);
+    background-color: var(--color0);
     color: var(--color2);
     transform: scale(105%);
 
