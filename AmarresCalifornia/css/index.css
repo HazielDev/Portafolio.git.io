@@ -191,7 +191,7 @@ body {
     position: relative;
     height: 550px;
     width: 100%;
-    background-image: url(../images/Main\ Banner\ Amarres\ de\ Texas.jpg);
+    background-image: url(../images/Main\ Banner\ Amarres\ de\ Texas.webp);
     background-position: right;
     background-size: cover;
     background-attachment: fixed;
@@ -320,7 +320,6 @@ body {
     min-width: 400px;
     background-color: var(--color2);
     background-image: url(../images/Galaxia\ Amarres\ Y\ \ Brujeria\ Texas.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 
@@ -563,7 +562,7 @@ body {
 #amorcita {
 
     font-size: 8rem;
-    right: -3rem;
+    right: -6px;
     bottom: -3rem;
     position: absolute;
     color: var(--color2);
@@ -656,7 +655,7 @@ body {
     background-position: top;
     transition: all 0.3s;
     font-size: 0;
-    color: var(--color0);
+    color: var(--colorx);
 
 }
 
@@ -824,7 +823,7 @@ body {
 
     .btn{
 
-        color: var(--color0);
+        color: var(--colorx);
 
     }
 
@@ -867,24 +866,41 @@ body {
     }
 
     #cont-info {
-        background-image: url(../images/Amuleto.jpg);
+        background-image: url(../images/Celestial\ Amarres\ Y\ Brujeria\ California.jpg);
         justify-content: center;
+        background-size: cover;
     }
 
     #text-info {
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
+
         padding: 10px;
         border-radius: 5px;
-        min-width: none;
-        color: var(--color0);
-        text-align: center  ;
+        text-align: center;
+        color: var(--colorx);
+        text-align: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 0;
+
+    }
+
+    #text-info p{
+
+        width: 90%;
+
     }
 
     #cont-chaman-items {
 
         justify-content: left;
         color: var(--color0);
+        height: 400px;
+
+    }
+
+    #chaman-items{
+
+        height: 600px;
 
     }
 
@@ -892,6 +908,7 @@ body {
 
         width: 65%;
         min-width: 390px;
+        font-size: 1rem;
 
     }
 
@@ -921,13 +938,15 @@ body {
     }
 
     #chaman2-text p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #chaman-info2 {
-        background-image: url(../images/chaman\ ancestral.jpg);
+        background-image: url(../images/Poder\ Celestial\ Amarres\ Y\ Brujerias\ California.jpg);
         background-position: center;
         background-size: cover;
+        height: 650px;
+
     }
 
     #comments {
@@ -999,7 +1018,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 10px;
-        background-color: var(--color0);
+        background-color: var(--colorx);
         background-image: url(../images/logo-Paypal.png);
 
     }
@@ -1032,7 +1051,7 @@ body {
 
     #aside-land{
 
-        background-color: rgb(255, 255, 255, 0.7);
+        background-color: rgb(0, 0, 0, 0.4);
         height: 90%;
         width: 100%;
 
@@ -1055,7 +1074,7 @@ body {
 
         width: 100%;
         height: auto;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin: 10px 0;
 
     }
@@ -1064,13 +1083,13 @@ body {
 
         font-size: 1.1em;
 
-    }
+    }*/
 
     .item{
 
-        font-size: 0.9em;
+        height: 300px;
 
-    } */
+    }
 
     .seccion-item i{
 
@@ -1110,8 +1129,8 @@ body {
         align-items: center;
         border-radius: 5px;
         font-size: 0.8rem;
-        width: 90%;
-        color: var(--color0);
+        width: 100%;
+        color: var(--colorx);
     }
 
     #cont-chaman-img{
@@ -1159,6 +1178,8 @@ body {
         backdrop-filter: blur(5px);
         border-radius: 10px;
         padding: 10px;
+        color: var(--colorx);
+        font-size: 0.8rem;
 
     }
 
@@ -1193,7 +1214,7 @@ body {
     #amorcita {
 
         font-size: 7rem;
-        right: -3rem;
+        right: -1rem;
         bottom: -3rem;
         
     }

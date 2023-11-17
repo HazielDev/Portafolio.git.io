@@ -30,4 +30,25 @@
 
     });
 
+
+    function verificarElementoEnCampoDeVision() {
+      var windowHeight = $(window).height();
+      var scrollTop = $(window).scrollTop();
+    
+      // Iterar sobre todos los elementos con la clase "anim"
+      $(".anim").each(function() {
+        var elementoTop = $(this).offset().top;
+        
+        if (elementoTop < (scrollTop + windowHeight)) {
+          $(this).addClass("animate__animated animate__fadeInRight");
+        }
+      });
+    }
+
+    $(window).scroll(function() {
+
+      verificarElementoEnCampoDeVision();
+
+    });
+
   });

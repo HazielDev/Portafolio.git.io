@@ -20,7 +20,7 @@ body{
     padding: 0;
     background-color: var(--fondo);
     font-family: "Poppins";
-    color: var(--color1);
+    color: var(--colorx);
 
 }
 
@@ -35,7 +35,7 @@ body{
     background-color: var(--color2);
     border: 1px solid var(--color2);
     border-radius: 10px;
-    color: var(--color1);
+    color: var(--colorx);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 
@@ -110,7 +110,7 @@ main{
     justify-content: center;
     height: 500px;
     width: 90%;
-    background-color: var(--colorx);
+    background-color: var(--color0);
     border: 1px solid var(--color2);
 
 }
@@ -121,9 +121,10 @@ main{
     font-family: "Poppins";
     border-radius: 10px;
     border: 1px solid var(--color2);
-    background-color: var(--color0);
-    color: var(--color1);
+    background-color: var(--color1);
+    color: var(--colorx);
     width: 50%;
+    text-indent: 8px;
 
 }
 

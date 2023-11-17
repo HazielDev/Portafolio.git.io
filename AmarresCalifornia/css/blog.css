@@ -4,10 +4,11 @@
 :root {
 
     --colorx: #fff;
-    --color0: #fff;
+    --color0: #202222;
     --color1: #050505;
-    --color2: #beb37e;
-    --fondo: #f3edd3;
+    --color2: #6622CC;
+    --fery: #9888A5;
+    --fondo: #303030;
 
 }
 
@@ -17,7 +18,7 @@ body {
     padding: 0;
     background-color: var(--fondo);
     font-family: "Poppins";
-    color: var(--color1);
+    color: var(--colorx);
 
 }
 
@@ -45,7 +46,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:  var(--color0);
+    color:  var(--colorx);
     margin: 0;
     height: 100%;
     width: 100%;
@@ -128,7 +129,7 @@ h2{
     width: 40%;
     background-color: var(--color2);
     border-radius: 5px;
-    color: var(--color0);
+    color: var(--colorx);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--color2);

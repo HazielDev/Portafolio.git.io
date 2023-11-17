@@ -151,8 +151,8 @@ nav{
 
     #idiom{
 
-        right: 20%;
-        font-size: 0.8rem;
+        right: 15%;
+        font-size: 0.7rem;
 
     }
 
@@ -180,4 +180,11 @@ nav{
         flex-direction: column;
         height: 150px;
     }
+
+    #logo{
+
+        height: 90px;
+
+    }
+
 }
