@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+
+    --colorx: #fff;
+    --color0: #fff;
+    --color1: #050505;
+    --color2: #beb37e;
+    --fondo: #f3edd3;
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+    font-family: "Poppins";
+    color: var(--color1);
+
+}
+
+#todo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#land{
+
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/Lectura\ del\ tarot\ online.jpg);
+    background-size: cover;
+
+}
+
+#title-land{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:  var(--color0);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+#desc{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: var(--color0);
+
+}
+
+#desc p{
+
+    width: 90%;
+
+}
+
+
+#whats {
+
+    position: fixed;
+    height: 100px;
+    z-index: 23;
+    right: 16px;
+    bottom: 16px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#whats:hover {
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#face {
+
+    position: fixed;
+    height: 130px;
+    z-index: 23;
+    right: 0px;
+    bottom: 120px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#face:hover {
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+h2{
+    text-align: center;
+}
+
+.btn {
+
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 8px;
+    width: 40%;
+    background-color: var(--color2);
+    border-radius: 5px;
+    color: var(--color0);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--color2);
+
+}
+
+.btn:hover {
+
+    cursor: pointer;
+    background-color: var(--color0);
+    color: var(--color2);
+    transform: scale(105%);
+
+}
+.articulo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    background-color: var(--color0);
+    width: 100%;
+    padding: 2rem 0;
+
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content p{
+
+    margin-top: 2rem;
+    text-align: center;
+    width: 60%;
+
+}
+
+.content img{
+
+    margin: 2rem 0;
+    width: 30%;
+    border-radius: 10px;
+
+}
+
+
+@media (max-width:550px) {
+
+    .content p{
+
+        width: 90%;
+    
+    }
+    
+    .content img{
+    
+        width: 60%;
+
+    }
+
+}

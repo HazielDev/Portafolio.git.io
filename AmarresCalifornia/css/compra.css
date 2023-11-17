@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --colorx: #fff;
+    --color0: #202222;
+    --color1: #050505;
+    --color2: #6622CC;
+    --fery: #9888A5;
+    --fondo: #303030;
+
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--color0);
+    font-family: "Poppins";
+    color: var(--color1);
+
+}
+
+.btn{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    width: 40%;
+    background-color: var(--color2);
+    border-radius: 10px;
+    color: var(--color1);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn:hover{
+
+    cursor: pointer;
+    background-color: var(--color1);
+    color: var(--color2);
+    transform: scale(105%);
+
+}
+
+#whats{
+
+    position: fixed;
+    height: 100px;
+    z-index: 23;
+    right: 16px;
+    bottom: 16px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#whats:hover{
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#face{
+
+    position: fixed;
+    height: 130px;
+    z-index: 23;
+    right: 0px;
+    bottom: 120px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#face:hover{
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#todo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fondo);
+
+}
+
+h2{
+
+    margin: 0;
+
+}
+
+main{
+
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--color2);
+    background-color: var(--colorx);
+    border-radius: 10px;
+    height: 400px;
+    width: 50%;
+
+}

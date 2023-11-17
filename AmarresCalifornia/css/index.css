@@ -1,0 +1,1275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+
+    --colorx: #fff;
+    --color0: #202222;
+    --color1: #050505;
+    --color2: #6622CC;
+    --fery: #9888A5;
+    --fondo: #303030;
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+    font-family: "Poppins";
+    color: var(--colorx);   
+
+}
+
+.detail{
+
+    color: var(--color2);
+
+}
+
+.detail-paypal{
+
+    color:  rgb(92, 195, 255);
+    font-weight: 900;
+
+}
+
+.btn {
+
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 8px;
+    width: 40%;
+    background-color: var(--color2);
+    border-radius: 5px;
+    color: var(--colorx);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--color2);
+
+}
+
+.btn:hover {
+
+    cursor: pointer;
+    background-color: var(--color0);
+    color: var(--color2);
+    transform: scale(105%);
+
+}
+
+#whats {
+
+    position: fixed;
+    height: 100px;
+    z-index: 23;
+    right: 16px;
+    bottom: 16px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#whats:hover {
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#face {
+
+    position: fixed;
+    height: 130px;
+    z-index: 23;
+    right: 0px;
+    bottom: 120px;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#face:hover {
+
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(95%);
+
+}
+
+#todo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--fondo);
+
+}
+
+#formu-whats {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid var(--color2);
+    height: 90%;
+    width: 90%;
+    background-color: var(--colorx);
+
+}
+
+.imp {
+
+    margin-top: 2rem;
+    font-family: "Poppins";
+    border-radius: 10px;
+    border: 1px solid var(--color2);
+    background-color: var(--color0);
+    color: var(--color1);
+
+}
+
+#input-name {
+
+    height: 40px;
+    width: 50%;
+
+}
+
+#input-mensaje {
+
+    resize: none;
+    height: 120px;
+    width: 50%;
+
+}
+
+.btn-land {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--colorx);
+    height: 80px;
+    width: 80px;
+    top: 45%;
+    color: var(--color2);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+
+}
+
+.btn-land:hover {
+
+    cursor: pointer;
+    color: var(--colorx);
+    transform: scale(105%);
+    background-color: var(--color2);
+
+}
+
+#land {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+    width: 100%;
+    background-image: url(../images/Main\ Banner\ Amarres\ de\ Texas.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#aside-land{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    background-color: var(--color0);
+
+}
+
+#aside-land p{
+
+    width: 90%;
+    text-align: center;
+
+}
+
+.section-items{
+
+    border-top: 3px solid var(--color2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    background-color: var(--color0);
+
+}
+
+.seccion-item i{
+
+    font-size: 3rem;
+
+}
+
+.seccion-item{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0px;
+    height: 180px;
+    width: 24%;
+    color: var(--fery);
+
+}
+
+.seccion-text{
+
+    width: 70%;
+    font-size: 0.8rem;
+
+}
+
+.seccion-linea{
+
+    height: 100px;
+    width: 1px;
+    background-color: var(--color2);
+
+}
+
+#cont-info {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    background-color: var(--color0);
+    height: 400px;
+    width: 100%;
+    border: 1px solid var(--color2);
+
+}
+
+#ojo {
+
+    position: absolute;
+    height: 260px;
+    top: -90px;
+    right: -90px;
+    z-index: 20;
+
+}
+
+#text-info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+    min-width: 400px;
+    padding-left: 25px;
+
+}
+
+#text-info p {
+
+    margin-top: 0;
+
+}
+
+#img-info {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    min-width: 400px;
+    background-color: var(--color2);
+    background-image: url(../images/Galaxia\ Amarres\ Y\ \ Brujeria\ Texas.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#chaman-info {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 92px;
+    margin-bottom: 32px;
+    width: 95%;
+    height: 750px;
+    background-color: var(--color0);
+    border: 1px solid var(--color2);
+
+}
+
+#flor {
+
+    position: absolute;
+    height: 190px;
+    left: -90px;
+    transform: rotate(330deg);
+
+}
+
+#cont-chaman-img {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 25%;
+    width: 90%;
+
+}
+
+#chaman-img {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color2);
+    height: 320px;
+    width: 90%;
+    position: absolute;
+    top: -80px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    background-image: url(../images/El\ poder\ de\ los\ astros\ Amarres\ Y\ Brujeria\ California.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--colorx);
+    font-size: 1.5rem;
+
+}
+
+#chaman-img h2{
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+#chaman-items {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 68%;
+    width: 95%;
+
+}
+
+#chaman-items h2 {
+    text-align: center;
+}
+
+#chaman-items a {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 200px;
+}
+
+#chaman-items h2 {
+
+    height: 10%;
+
+}
+
+#cont-chaman-items {
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 65%;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 94%;
+    width: 30%;
+    background-color: var(--color2);
+    min-width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--colorx);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.item h3 {
+
+    font-size: 1.2em;
+
+}
+
+.item-text {
+
+    margin-top: 0px;
+    text-align: center;
+    width: 90%;
+
+}
+
+#cont-vision {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/Celestial\ Amarres\ Y\ Brujeria\ California.jpg);
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid var(--color2);
+}
+
+#vision{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color0);
+    height: 100%;
+    width: 50%;
+    border-left: 16px solid var(--color2);
+
+}
+
+#vision p{
+
+    width: 90%;
+    text-align: center;
+
+}
+
+#cont-pago{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+    height: 400px;
+    width: 100%;
+    background-color: var(--colorx);
+    color: var(--colorx);
+
+}
+
+#logo-paypal{
+
+    width: 30%;
+    margin-left: 4rem;
+
+}
+
+#paypal{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-left: 30px;
+    top: 0;
+    right: 0;
+    color: var(--colorx);
+    height: 100%;
+    width: 70%;
+    background-color: rgb(1, 1, 105);
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 25% 50%);
+}
+
+#chaman-info2 {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 750px;
+    width: 95%;
+    background-color: var(--color0);
+    border: 1px solid var(--color2);
+
+}
+
+#amorcita {
+
+    font-size: 8rem;
+    right: -3rem;
+    bottom: -3rem;
+    position: absolute;
+    color: var(--color2);
+    z-index: 22;
+
+}
+
+#chaman2-img {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+}
+
+#chaman2-img img {
+
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid var(--color2);
+
+}
+
+#chaman2-img a {
+    min-width: 300px;
+}
+
+#chaman2-text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+    width: 35%;
+    min-width: 380px;
+
+}
+
+#chaman2-text a {
+    display: none;
+}
+
+#cont-angeles{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    background-color: var(--color0);
+    border: 1px solid var(--color2);
+
+}
+
+#cont-angeles p{
+
+    margin-bottom: 2rem;
+    width: 80%;
+    text-align: center;
+
+}
+
+#angeles{
+
+    border-radius: 10px;
+    overflow: hidden;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.angel{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    height: 280px;
+    width: 280px;
+    background-color: var(--color2);
+    background-size: cover;
+    background-position: top;
+    transition: all 0.3s;
+    font-size: 0;
+    color: var(--color0);
+
+}
+
+.angel h2{
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.angel h2:hover{
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.angel:hover{
+
+    cursor: pointer;
+    flex: 2;
+    font-size: 0.9rem;
+
+}
+
+
+#cont-comments {
+
+    border: 1px solid var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 4rem;
+    height: 600px;
+    width: 97%;
+    background-color: var(--color0);
+
+}
+
+#all-comments{
+
+    height: 90%;
+    width: 90%;
+    border: 1px solid var(--color2);
+    background-color: var(--colorx);
+
+}
+
+#comments {
+
+    gap: 1rem;
+    height: 65%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.comment {
+
+    position: relative;
+    border-radius: 5px;
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid darkgray;
+    min-width: 400px;
+}
+
+#cont-comments h2 {
+    margin-top: 3rem;
+}
+
+.respond {
+
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: -60px;
+    width: 90%;
+
+}
+
+.respond b
+,.respond i{
+
+    color: var(--color2);
+
+}
+
+.comment-user {
+
+    color: var(--color0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+    background-color: var(--color2);
+
+}
+
+.comment-text {
+
+    width: 90%;
+
+}
+
+.comment-text b{
+
+    color: var(--color2)
+
+}
+
+
+#cont-testi-audios{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 400px;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--color0);
+
+}
+
+#testi-audios{
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+.testi-audio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (max-width:1010px) {
+
+
+
+    .btn{
+
+        color: var(--color0);
+
+    }
+
+    #whats {
+
+        height: 70px;
+        bottom: 2rem;
+
+    }
+
+    #face {
+
+        height: 90px;
+
+    }
+
+    #aside-land{
+
+        width: 70%;
+
+    }
+
+    #land aside {
+
+        height: 90%;
+
+    }
+
+    #land aside a {
+        display: block;
+    }
+
+    #land section {
+        height: 30%;
+        display: none;
+    }
+
+    #img-info {
+        display: none;
+    }
+
+    #cont-info {
+        background-image: url(../images/Amuleto.jpg);
+        justify-content: center;
+    }
+
+    #text-info {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        padding: 10px;
+        border-radius: 5px;
+        min-width: none;
+        color: var(--color0);
+        text-align: center  ;
+    }
+
+    #cont-chaman-items {
+
+        justify-content: left;
+        color: var(--color0);
+
+    }
+
+    #chaman-img {
+
+        width: 65%;
+        min-width: 390px;
+
+    }
+
+    #chaman2-img {
+
+        display: none;
+
+    }
+
+    #chaman2-text {
+
+        width: 95%;
+        height: 95%;
+        min-width: 380px;
+        background-color: rgba(0, 0, 0, 0.595);
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        padding: 20px;
+        color: var(--color0);
+
+    }
+
+    #chaman2-text a {
+        display: block;
+        min-width: 250px;
+        width: 250px;
+    }
+
+    #chaman2-text p {
+        font-size: 0.9rem;
+    }
+
+    #chaman-info2 {
+        background-image: url(../images/chaman\ ancestral.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #comments {
+
+        overflow: auto;
+
+    }
+
+    .comment {
+
+        margin-top: 45px;
+    }
+
+    .btn-land {
+
+        height: 50px;
+        width: 50px;
+
+    }
+
+    #ojo {
+
+        height: 200px;
+        top: -80px;
+        right: -80px;
+
+    }
+
+    #slider-0 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+
+    #input-name {
+
+        width: 80%;
+    
+    }
+    
+    #input-mensaje {
+    
+        width: 80%;
+    
+    }
+
+    #formu-whats h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width:550px) {
+
+    #paypal{
+
+        width: 100%;
+        clip-path: none;
+        text-align: center;
+
+    }
+
+    #paypal::before{
+
+        content: "";
+        height: 100px;
+        width: 90%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-color: var(--color0);
+        background-image: url(../images/logo-Paypal.png);
+
+    }
+
+    body{
+
+        font-size: 0.8em;
+
+    }
+
+    #angel-3,
+    #angel-4{
+
+        display: none;
+
+    }
+
+    #idiom{
+
+        top: 10px;
+        right: 5px;
+
+    }
+
+    #land{
+
+        justify-content: center;
+
+    }
+
+    #aside-land{
+
+        background-color: rgb(255, 255, 255, 0.7);
+        height: 90%;
+        width: 100%;
+
+    }
+
+    #section-1{
+
+        border: 1px solid var(--color2);
+
+    }
+
+    .section-items{
+
+        height: auto;
+        flex-direction: column;
+
+    }
+
+    .seccion-item{
+
+        width: 100%;
+        height: auto;
+        font-size: 0.8rem;
+        margin: 10px 0;
+
+    }
+
+    /* #chaman-img h2{
+
+        font-size: 1.1em;
+
+    }
+
+    .item{
+
+        font-size: 0.9em;
+
+    } */
+
+    .seccion-item i{
+
+        font-size: 2rem;
+
+    }
+
+    .seccion-linea{
+
+        height: 1px;
+        width: 90%;
+
+    }
+
+    #cont-vision{
+
+        height: 750px;
+        flex-direction: column;
+        background-position: top;
+        background-size: cover;
+
+    }
+
+
+    #vision{
+        
+        text-align: center;
+        height: 70%;
+        width: 100%;
+        border: 0;
+
+    }
+
+    #text-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        width: 90%;
+        color: var(--color0);
+    }
+
+    #cont-chaman-img{
+
+        width: 100%;
+
+    }
+
+    #chaman-img {
+
+        width: 100%;
+        top: 20px;
+        min-width: 0px;
+        text-align: center;
+        border-radius: 0;
+
+    }
+
+    #chaman-img h2{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+
+    }
+
+    #cont-angeles{
+
+        height: auto;
+        padding: 20px 0;
+
+    }
+
+    #chaman2-text {
+
+        width: 100%;
+        height: 100%;
+        min-width: 200px;
+        background-color: rgba(0, 0, 0, 0.595);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+
+    .btn-land {
+
+        height: 40px;
+        width: 40px;
+
+    }
+
+    #btn-right {
+
+        right: 10px;
+
+    }
+
+    #btn-left {
+
+        left: 10px;
+
+    }
+
+    #ojo {
+
+        height: 150px;
+        top: -60px;
+        right: -70px;
+        z-index: 20;
+
+    }
+
+    #amorcita {
+
+        font-size: 7rem;
+        right: -3rem;
+        bottom: -3rem;
+        
+    }
+
+    #chaman-info {
+
+        margin-top: 30px;
+        width: 100%;
+        height: 900px;
+    
+    }
+
+    #face {
+
+        height: 80px;
+
+    }
+
+    #whats {
+
+        height: 60px;
+        right: 11px;
+    
+    }
+
+    .comment {
+        margin: 0;
+        margin-bottom: 60px;
+        min-width: 300px;
+        height: auto;
+        display: none;
+    }
+
+    #comment1 {
+        display: inline-flex;
+    }
+
+    #comment2 {
+        display: inline-flex;
+    }
+
+    #comment3 {
+        display: inline-flex;
+    }
+
+    .respond {
+
+        font-size: 0.8rem;
+        bottom: -73px;
+        width: 90%;
+    
+    }
+
+    #comments {
+        height: 73%;
+        justify-content: center;
+    }
+
+    #cont-comments {
+
+        height: 750px;
+    
+    }
+
+    #cont-comments h2{
+        margin-top: 30px;
+    }
+
+    #cont-comments a {
+        min-width: 250px;
+    }
+
+    #cont-testi-audios{
+
+        height: auto;
+
+    }
+
+}
