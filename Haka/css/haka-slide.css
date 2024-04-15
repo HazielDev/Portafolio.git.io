@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color_primario: #f4efef;
+    --detail_0: #FFD6FF;
+    --detail_1: #E7C6FF;
+    --detail_2: #C8B6FF;
+    --detail_3: #B8C0FF;
+    --detail_4: #BBD0FF;
+    --detail_5: #91b4ff;
+}
+
+*{
+    user-select: none;
+    font-family: "Montserrat";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+#main-title{
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#title-effect{
+    color: var(--detail_2);
+    transition: all 0.5s ease-in-out;
+}
+
+#start-btn{
+    background-color: var(--detail_2);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem;
+    border: 10px solid var(--detail_2);
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+#start-btn:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 10px solid var(--detail_4);
+    border-radius: 4px;
+    color: var(--detail_4);
+}
+
+#start-btn:hover + #main-title #title-effect{
+    color: var(--detail_5);
+    font-size: 3.7rem;
+}
+
+#start-btn:hover + #main-title{
+    color: var(--detail_2);
+    font-size: 2rem;
+}
+
+#start-btn:hover + #main-title + #circle-effect{
+    right: -650px;
+}
+
+#circle-effect{
+    position: absolute;
+    right: -800px;
+    height: 150vh;
+    width: 60%;
+    border-radius: 50%;
+    background-color: rgba(231, 198, 255, 0.4);
+    background-blend-mode: multiply; /* Multiplica los colores */
+    transition: all 0.5s;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+}
+
+.cont-img{
+    height: 90%;
+    width: 40%;
+}
+
+.cont-img img, .cont-img video{
+    height: 90%;
+    border: 10px solid var(--detail_0);
+    border-radius: 10px;
+}
+
+.cont-text{
+    height: auto;
+    width: 40%;
+    font-size: 1.2rem;
+    background-color: var(--detail_5);
+    color: var(--color_primario);
+    padding: 1rem;
+    border: 5px solid var(--color_primario);
+    border-radius: 5px;
+    text-wrap: pretty;
+}
+
+#slide-1{
+    background-color: var(--detail_2);
+}
+
+#slide-2{
+    background-color: rgb(249, 155, 121);
+    flex-direction: row-reverse;
+}
+
+#slide-3{
+    background-color: #B8C0FF;
+    flex-direction: row;
+}
+
+#slide-4{
+    background-color: var(--detail_4);
+    flex-direction: row;
+}
+
+#slide-5{
+    background-color: var(--detail_0);
+    flex-direction: row;
+}
+
+#slide-6{
+    background-color: var(--detail_3);
+    flex-direction: row-reverse;
+}
+
+#slide-7{
+    background-color: var(--detail_1);
+    flex-direction: row;
+}
+
+#slide-8{
+    background-color: rgb(234, 255, 255);
+    flex-direction: row-reverse;
+}
+
+#slide-9{
+    background-color: var(--detail_2);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    font-weight: 700;
+    background-color: var(--detail_5);
+    color: var(--color_primario);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: 5px solid var(--color_primario);
+    transition: all 0.7s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: var(--detail_3);
+    background-color: #fff;
+    transform: translateY(-2px);
+}
