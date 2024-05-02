@@ -7,6 +7,8 @@
     --maynez: #E85D04;
     --ama: #FFBA08;
     --red: #EE4949;
+    --verde_oscuro: #006000;
+    --verde: #04ee04;
 
 }
 
@@ -32,6 +34,7 @@ body {
     font-size: 0.8rem;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .btn:hover{
@@ -144,6 +147,42 @@ body {
 .gym-text{
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+#cont-fire{
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0;
+    width: 95%;
+}
+
+#title-fire{
+    color: var(--gris);
+    font-weight: 600;
+}
+
+#fire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    width: 170px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+}
+
+#fire img{
+    width: 60%;
+}
+
+#fire-number{
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 #cont-day{

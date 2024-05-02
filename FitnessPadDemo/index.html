@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/index.css?v=0.1">
     <title>FitnessPad DEMO</title>
 </head>
 <body>
@@ -26,15 +26,15 @@
         <div id="banner">
             <div id="banner-title">
                 <p>¡Hoy hiciste 5 Horas de Ejercicios!</p>
-                <p>¡puedes hacer más!</p>
-                <p href="" class="btn">Mi entrenamiento</p>
+                <p style="font-size: 0.8rem;">¡puedes hacer más!</p>
+                <a href="" class="btn">Mi entrenamiento</a>
             </div>
         </div>
         <div id="cont-gyms">
             <p id="title-gym">Mis Ultimos Ejercicios</p>
             <div class="gym">
-                <div class="gym-circle">
-                    100%
+                <div class="gym-circle" style="border-color: var(--ama);">
+                    50%
                 </div>
                 <div class="gym-data">
                     <div class="gym-day">Hoy a las 4:00 pm</div>
@@ -42,8 +42,8 @@
                 </div>
             </div>
             <div class="gym">
-                <div class="gym-circle">
-                    200%
+                <div class="gym-circle" style="border-color: var(--verde);">
+                    120%
                 </div>
                 <div class="gym-data">
                     <div class="gym-day">Hoy a las 4:00 pm</div>
@@ -59,6 +59,23 @@
                     <div class="gym-text">Glúteos</div>
                 </div>
             </div>
+            <div class="gym">
+                <div class="gym-circle">
+                    0%
+                </div>
+                <div class="gym-data">
+                    <div class="gym-day">Ayer a las 2:00 pm</div>
+                    <div class="gym-text">Glúteos</div>
+                </div>
+        </div>
+    </div>
+        <div id="cont-fire" class="sombra">
+            <p id="title-fire">Hoy se quemaron:</p>
+            <div id="fire">
+                <img src="images/fuego.png" alt="">
+            </div>
+            <p id="fire-number">300 Calorías!</p>
+            <a href="" class="btn">Mi entrenamiento</a>
         </div>
         <div id="cont-day">
             <p id="title-gym">Ejercicio recomendado del día</p>
