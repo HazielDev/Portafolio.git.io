@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    color: var(--maynez);
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--blanco);
+    box-shadow: 3px -5px 5px rgba(0, 0, 0, 0.04);
+}
+
+.footer-a{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--maynez);
+    text-align: center;
+}
+
+.footer-a p{
+    margin: 0;
+    font-size: 0.6rem;
+    font-weight: 600;
+}

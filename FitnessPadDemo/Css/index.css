@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    --blanco: #f9f6f6;
+    --gris: #a9a9a9;
+    --maynez: #E85D04;
+    --ama: #FFBA08;
+    --red: #EE4949;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: var(--blanco);
+}
+
+.btn{
+    width: auto;
+    color: var(--blanco);
+    text-align: center;
+    background-color: var(--red);
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: var(--ama);
+    cursor: pointer;
+}
+
+*{
+    font-family: "Poppins";
+}
+
+#todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cont-review{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 1rem 0;
+    width: 95%;
+    color: var(--maynez);
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid var(--maynez);
+    border-radius: 5px;
+}
+
+#banner{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 95%;
+    background-image: url(../images/banner-img.jpg);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#banner p{
+    margin: 0;
+}
+
+#banner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+#cont-gyms{
+    margin-top: 12px;
+    height: auto;
+    width: 95%;
+}
+
+#title-gym{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.gym{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem 0;
+    height: auto;
+    width: 100%;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.04);
+}
+
+.gym-circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--red);
+    font-size: 0.9rem;
+    margin-left: 12px;
+    color: var(--gris);
+}
+
+.gym-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.gym-day{
+    font-size: 0.8rem;
+    color: var(--gris);
+}
+
+.gym-text{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#cont-day{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin-bottom: 100px;
+}
